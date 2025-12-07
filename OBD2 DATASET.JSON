@@ -2346,20 +2346,6 @@
     "codigo": "P1361",
     "descripcion": "Ignition Control (IC) Circuit Low Voltage (Ford) / TDC Sensor Intermittent (Honda)",
     "causas_probables": [
-      "Ford: Corto en bobinas",
-      "Honda: Sensor de Punto Muerto Superior (TDC) con ruido",
-      "Cableado dañado"
-    ],
-    "soluciones": [
-      "Ford: Revisar arnés de bobinas",
-      "Honda: Reemplazar sensor TDC (dentro del distribuidor o externo)",
-      "Revisar interferencia electromagnética"
-    ]
-  },
-  {
-    "codigo": "P1361",
-    "descripcion": "Ignition Control (IC) Circuit Low Voltage (Ford) / TDC Sensor Intermittent (Honda)",
-    "causas_probables": [
       "Honda: Sensor de Punto Muerto Superior (TDC) con ruido",
       "Ford: Corto en circuito de bobinas",
       "Distribuidor dañado (Honda)"
@@ -2874,20 +2860,6 @@
     ]
   },
   {
-    "codigo": "P1744",
-    "descripcion": "Torque Converter Clutch System Stuck in Off Position (Ford)",
-    "causas_probables": [
-      "Convertidor de par dañado (balata desgastada)",
-      "Válvula TCC en cuerpo de válvulas atascada",
-      "Solenoide TCC fallando"
-    ],
-    "soluciones": [
-      "Reemplazar convertidor de par",
-      "Instalar kit de reparación en cuerpo de válvulas (Shift Kit)",
-      "Cambiar solenoide TCC"
-    ]
-  },
-  {
     "codigo": "P1746",
     "descripcion": "Pressure Control Solenoid 'A' Open Circuit (EPC)",
     "causas_probables": [
@@ -2941,20 +2913,6 @@
       "Medir presión de línea con manómetro",
       "Reemplazar solenoide EPC",
       "Reparación mayor de transmisión"
-    ]
-  },
-  {
-    "codigo": "P1780",
-    "descripcion": "Transmission Control Switch (O/D Cancel) Out of Self Test Range",
-    "causas_probables": [
-      "El mecánico olvidó presionar el botón de Overdrive durante el escaneo KOER",
-      "Interruptor de O/D en la palanca dañado",
-      "Cable cortado en la columna de dirección"
-    ],
-    "soluciones": [
-      "Repetir escaneo presionando el botón cuando se indique",
-      "Reparar cableado de la palanca de cambios",
-      "Reemplazar palanca"
     ]
   },
   {
