@@ -472,7 +472,7 @@
       "Prueba de resistencia",
       "Reemplazar inyector 5"
     ]
-  }
+  },
   {
     "codigo": "P0206",
     "descripcion": "Injector Circuit Malfunction - Cylinder 6",
@@ -894,7 +894,7 @@
       "Limpieza de inyectores",
       "Reparación mecánica si la compresión es baja"
     ]
-  }
+  },
   {
     "codigo": "P0309",
     "descripcion": "Cylinder 9 Misfire Detected",
@@ -1244,7 +1244,7 @@
       "Medir resistencia (no debe ser 0 ohms)",
       "Reemplazar válvula y revisar fusibles"
     ]
-  }
+  },
   {
     "codigo": "P0446",
     "descripcion": "Evaporative Emission Control System Vent Control Circuit Malfunction",
@@ -1577,8 +1577,7 @@
       "Reemplazar sensor de rango de transmisión",
       "Revisar arnés por daños físicos"
     ]
-  }
-  
+  },
   {
     "codigo": "P0707",
     "descripcion": "Transmission Range Sensor Circuit Low Input",
@@ -1912,8 +1911,7 @@
       "Cambiar sensor ECT",
       "Reemplazar termostato"
     ]
-  }
-  
+  },
   {
     "codigo": "P1117",
     "descripcion": "Engine Coolant Temperature (ECT) Sensor Intermittent",
@@ -2149,7 +2147,7 @@
       "Verificar voltajes en el relé de bomba",
       "Rastrear línea de alimentación"
     ]
-  }
+  },
   {
     "codigo": "P1233",
     "descripcion": "Fuel Pump Driver Module Disabled or Offline (Ford)",
@@ -2357,8 +2355,7 @@
       "Honda: Reemplazar sensor TDC (dentro del distribuidor o externo)",
       "Revisar interferencia electromagnética"
     ]
-  }
-[
+  },
   {
     "codigo": "P1361",
     "descripcion": "Ignition Control (IC) Circuit Low Voltage (Ford) / TDC Sensor Intermittent (Honda)",
@@ -2582,8 +2579,7 @@
       "Buscar fugas de freón con tinte UV",
       "Cambiar interruptor de baja presión"
     ]
-  }
-[
+  },
   {
     "codigo": "P1474",
     "descripcion": "Low Fan Control Primary Circuit Malfunction",
@@ -2876,8 +2872,7 @@
       "Reparar cables en la palanca de cambios (falla común Ford)",
       "Reemplazar palanca"
     ]
-  }
-[
+  },
   {
     "codigo": "P1744",
     "descripcion": "Torque Converter Clutch System Stuck in Off Position (Ford)",
