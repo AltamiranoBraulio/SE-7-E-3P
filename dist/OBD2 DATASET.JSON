@@ -1,0 +1,4571 @@
+[
+  {
+    "codigo": "P0100",
+    "descripcion": "Mass or Volume Air Flow Circuit Malfunction",
+    "system": "Air Intake System",
+    "sintomas": [
+      "El motor se apaga al detenerse en un semáforo",
+      "Dificultad para arrancar el motor",
+      "Pérdida notable de potencia al acelerar",
+      "Humo negro excesivo por el escape"
+    ],
+    "causas_probables": [
+      "Sensor MAF sucio o defectuoso",
+      "Fuga de vacío en admisión",
+      "Cableado del sensor abierto o en corto"
+    ],
+    "soluciones": [
+      "Limpiar sensor MAF con spray dieléctrico",
+      "Revisar fugas de aire/vacío",
+      "Verificar voltaje y tierra del conector"
+    ]
+  },
+  {
+    "codigo": "P0101",
+    "descripcion": "Mass or Volume Air Flow Circuit Range/Performance",
+    "system": "Air Intake System",
+    "sintomas": [
+      "Marcha mínima (ralentí) inestable o sube y baja",
+      "Jaloneos al acelerar a fondo",
+      "Consumo de combustible elevado",
+      "El motor hace ruidos de detonación (cascabeleo)"
+    ],
+    "causas_probables": [
+      "Flujo de aire restringido",
+      "Sensor MAF contaminado",
+      "Fuga de aire entre MAF y cuerpo de aceleración"
+    ],
+    "soluciones": [
+      "Reemplazar filtro de aire",
+      "Limpiar o reemplazar MAF",
+      "Revisar abrazaderas de ductos de aire"
+    ]
+  },
+  {
+    "codigo": "P0102",
+    "descripcion": "Mass or Volume Air Flow Circuit Low Input",
+    "system": "Air Intake System",
+    "sintomas": [
+      "Motor entra en modo de seguridad (Limp Mode)",
+      "Arranque difícil en frío",
+      "Poca respuesta del acelerador",
+      "Olor fuerte a gasolina cruda en el escape"
+    ],
+    "causas_probables": [
+      "Señal del sensor en corto a tierra",
+      "Sensor MAF dañado",
+      "Filtro de aire muy sucio"
+    ],
+    "soluciones": [
+      "Verificar cableado con multímetro",
+      "Cambiar sensor MAF",
+      "Revisar obstrucciones en admisión"
+    ]
+  },
+  {
+    "codigo": "P0103",
+    "descripcion": "Mass or Volume Air Flow Circuit High Input",
+    "system": "Air Intake System",
+    "sintomas": [
+      "Humo negro constante",
+      "El motor se ahoga al acelerar",
+      "Ralentí muy alto o errático",
+      "Fallas de encendido (Misfire) en varios cilindros"
+    ],
+    "causas_probables": [
+      "Señal del sensor en corto a voltaje",
+      "Sensor MAF defectuoso",
+      "Problema en la ECU"
+    ],
+    "soluciones": [
+      "Comprobar arnés del sensor",
+      "Limpiar conectores oxidados",
+      "Reemplazar MAF"
+    ]
+  },
+  {
+    "codigo": "P0105",
+    "descripcion": "Manifold Absolute Pressure/Barometric Circuit Malfunction",
+    "system": "Air Intake System",
+    "sintomas": [
+      "El motor tarda mucho en arrancar",
+      "Humo negro intermitente",
+      "Ralentí áspero o vibración excesiva",
+      "Consumo excesivo de gasolina"
+    ],
+    "causas_probables": [
+      "Sensor MAP dañado",
+      "Cableado abierto o en corto",
+      "Manguera de vacío del MAP desconectada"
+    ],
+    "soluciones": [
+      "Verificar mangueras de vacío",
+      "Medir voltaje de referencia (5V)",
+      "Reemplazar sensor MAP"
+    ]
+  },
+  {
+    "codigo": "P0106",
+    "descripcion": "Manifold Absolute Pressure/Barometric Circuit Range/Performance",
+    "system": "Air Intake System",
+    "sintomas": [
+      "Pérdida de potencia en subidas",
+      "El auto se siente pesado al acelerar",
+      "Olor a combustible en el escape",
+      "Vacilación del motor al pisar el acelerador"
+    ],
+    "causas_probables": [
+      "Línea de vacío obstruida",
+      "Sensor MAP defectuoso",
+      "Problemas de EGR"
+    ],
+    "soluciones": [
+      "Limpiar puerto de vacío del sensor",
+      "Comprobar funcionamiento de EGR",
+      "Cambiar sensor MAP"
+    ]
+  },
+  {
+    "codigo": "P0110",
+    "descripcion": "Intake Air Temperature Circuit Malfunction",
+    "system": "Air Intake System",
+    "sintomas": [
+      "Dificultad para arrancar en mañanas frías",
+      "Consumo de combustible ligeramente alto",
+      "Avance de encendido incorrecto (cascabeleo)",
+      "El motor funciona rico (olor a gasolina)"
+    ],
+    "causas_probables": [
+      "Sensor IAT desconectado",
+      "Sensor IAT dañado",
+      "Cables rotos"
+    ],
+    "soluciones": [
+      "Conectar correctamente el sensor",
+      "Medir resistencia del sensor",
+      "Reemplazar IAT"
+    ]
+  },
+  {
+    "codigo": "P0115",
+    "descripcion": "Engine Coolant Temperature Circuit Malfunction",
+    "system": "Cooling System",
+    "sintomas": [
+      "El ventilador del radiador no enciende o no apaga",
+      "Indicador de temperatura del tablero no se mueve",
+      "El motor se sobrecalienta",
+      "Humo negro al arrancar (mezcla muy rica)"
+    ],
+    "causas_probables": [
+      "Falta de refrigerante",
+      "Termostato pegado",
+      "Sensor ECT defectuoso"
+    ],
+    "soluciones": [
+      "Rellenar nivel de refrigerante",
+      "Verificar cableado del sensor",
+      "Reemplazar sensor de temperatura"
+    ]
+  },
+  {
+    "codigo": "P0116",
+    "descripcion": "Engine Coolant Temperature Circuit Range/Performance",
+    "system": "Cooling System",
+    "sintomas": [
+      "Lectura de temperatura salta erráticamente",
+      "El motor se apaga cuando está caliente",
+      "Consumo de combustible muy alto",
+      "Dificultad de arranque en caliente"
+    ],
+    "causas_probables": [
+      "Termostato defectuoso (abierto)",
+      "Sensor ECT dañado",
+      "Aire en el sistema de enfriamiento"
+    ],
+    "soluciones": [
+      "Purgar sistema de enfriamiento",
+      "Cambiar termostato",
+      "Cambiar sensor ECT"
+    ]
+  },
+  {
+    "codigo": "P0120",
+    "descripcion": "Throttle Position Sensor/Switch A Circuit Malfunction",
+    "system": "Fuel System",
+    "sintomas": [
+      "El auto no responde al pisar el acelerador",
+      "Cambios de velocidad bruscos (transmisión automática)",
+      "Motor acelerado en ralentí",
+      "El vehículo se jalonea al mantener velocidad constante"
+    ],
+    "causas_probables": [
+      "Sensor TPS dañado",
+      "Resorte de retorno del acelerador flojo",
+      "Cableado en corto"
+    ],
+    "soluciones": [
+      "Ajustar posición del TPS",
+      "Revisar voltaje de señal",
+      "Reemplazar TPS"
+    ]
+  },
+  {
+    "codigo": "P0125",
+    "descripcion": "Insufficient Coolant Temperature for Closed Loop Fuel Control",
+    "system": "Cooling System",
+    "sintomas": [
+      "La calefacción del auto no calienta",
+      "Consumo de combustible excesivo",
+      "El motor nunca alcanza temperatura normal de operación",
+      "Olor a gasolina constante"
+    ],
+    "causas_probables": [
+      "Termostato abierto permanentemente",
+      "Bajo nivel de refrigerante",
+      "Sensor ECT no lee correctamente"
+    ],
+    "soluciones": [
+      "Reemplazar termostato",
+      "Rellenar refrigerante",
+      "Verificar tiempo de calentamiento del motor"
+    ]
+  },
+  {
+    "codigo": "P0128",
+    "descripcion": "Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)",
+    "system": "Cooling System",
+    "sintomas": [
+      "El indicador de temperatura tarda mucho en subir",
+      "Aire de la calefacción sale tibio o frío",
+      "Alto consumo de gasolina (motor trabaja frío)",
+      "Revoluciones altas en ralentí por mucho tiempo"
+    ],
+    "causas_probables": [
+      "Termostato se queda abierto",
+      "Ventiladores encendidos todo el tiempo",
+      "Sensor de temperatura descalibrado"
+    ],
+    "soluciones": [
+      "Reemplazar termostato mecánico",
+      "Verificar operación de fan clutch o electroventiladores",
+      "Cambiar sensor ECT"
+    ]
+  },
+  {
+    "codigo": "P0130",
+    "descripcion": "O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "Consumo de combustible elevado",
+      "Humo negro en el escape",
+      "Ralentí inestable",
+      "Pérdida leve de potencia"
+    ],
+    "causas_probables": [
+      "Sensor de oxígeno contaminado",
+      "Fuga en el escape antes del sensor",
+      "Circuito abierto en señal"
+    ],
+    "soluciones": [
+      "Reparar fugas de escape",
+      "Limpiar conector del sensor",
+      "Cambiar sensor de oxígeno B1S1"
+    ]
+  },
+  {
+    "codigo": "P0131",
+    "descripcion": "O2 Sensor Circuit Low Voltage (Bank 1 Sensor 1)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "Detonación o cascabeleo del motor",
+      "Falta de potencia al acelerar",
+      "Vacilación o jaloneo al acelerar",
+      "Motor se calienta más de lo normal (mezcla pobre)"
+    ],
+    "causas_probables": [
+      "Mezcla muy pobre",
+      "Fuga de vacío grande",
+      "Cable de señal en corto a tierra"
+    ],
+    "soluciones": [
+      "Buscar fugas de vacío",
+      "Verificar presión de combustible",
+      "Reemplazar sensor O2"
+    ]
+  },
+  {
+    "codigo": "P0132",
+    "descripcion": "O2 Sensor Circuit High Voltage (Bank 1 Sensor 1)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "Humo negro visible",
+      "Olor fuerte a huevo podrido (azufre)",
+      "Bujías carbonizadas (negras)",
+      "Consumo de gasolina muy alto"
+    ],
+    "causas_probables": [
+      "Mezcla muy rica",
+      "Inyector goteando",
+      "Cable de señal en corto a voltaje"
+    ],
+    "soluciones": [
+      "Verificar inyectores",
+      "Revisar regulador de presión de gasolina",
+      "Reemplazar sensor O2"
+    ]
+  },
+  {
+    "codigo": "P0133",
+    "descripcion": "O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "Falla en prueba de emisiones (smog check)",
+      "Respuesta lenta del motor",
+      "Consumo de combustible intermitente",
+      "Ralentí ligeramente inestable"
+    ],
+    "causas_probables": [
+      "Sensor envejecido (lento)",
+      "Pequeña fuga de escape",
+      "Contaminación por silicona o anticongelante"
+    ],
+    "soluciones": [
+      "Cambiar sensor de oxígeno",
+      "Reparar juntas de escape",
+      "Verificar fugas internas de refrigerante"
+    ]
+  },
+  {
+    "codigo": "P0134",
+    "descripcion": "O2 Sensor Circuit No Activity Detected (Bank 1 Sensor 1)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "Motor se queda en 'Open Loop' (lazo abierto)",
+      "Consumo alto de combustible constante",
+      "Olor a gasolina en el escape",
+      "Check engine encendido sin fallas graves de conducción"
+    ],
+    "causas_probables": [
+      "Sensor desconectado",
+      "Fusible del calentador del sensor fundido",
+      "Sensor muerto"
+    ],
+    "soluciones": [
+      "Revisar fusibles del calentador O2",
+      "Verificar continuidad del cableado",
+      "Reemplazar sensor"
+    ]
+  },
+  {
+    "codigo": "P0135",
+    "descripcion": "O2 Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "El motor tarda en estabilizarse en frío",
+      "Consumo alto solo durante los primeros minutos de encendido",
+      "Check engine se enciende casi inmediatamente al arrancar en frío",
+      "No hay síntomas visibles cuando el motor ya está caliente"
+    ],
+    "causas_probables": [
+      "Resistencia interna del calentador abierta",
+      "Fusible quemado",
+      "Problema de cableado en el circuito del calentador"
+    ],
+    "soluciones": [
+      "Medir resistencia del calentador (hilos blancos o negros)",
+      "Reemplazar fusible",
+      "Cambiar sensor por falla del calentador"
+    ]
+  },
+  {
+    "codigo": "P0136",
+    "descripcion": "O2 Sensor Circuit Malfunction (Bank 1 Sensor 2)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "Generalmente no presenta síntomas de conducción",
+      "Luz Check Engine encendida",
+      "Falla la prueba de emisiones",
+      "Posible olor leve a escape si hay fuga"
+    ],
+    "causas_probables": [
+      "Fuga en escape cerca del sensor trasero",
+      "Sensor dañado",
+      "Catalizador muy degradado"
+    ],
+    "soluciones": [
+      "Revisar fugas post-catalizador",
+      "Verificar cableado",
+      "Cambiar sensor trasero"
+    ]
+  },
+  {
+    "codigo": "P0141",
+    "descripcion": "O2 Sensor Heater Circuit Malfunction (Bank 1 Sensor 2)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "El motor tarda más en entrar en ciclo cerrado (Closed Loop)",
+      "Ligero aumento en el consumo de combustible",
+      "No hay síntomas notables de conducción (el auto se siente normal)",
+      "Luz Check Engine encendida inmediatamente después de un arranque en frío"
+    ],
+    "causas_probables": [
+      "Resistencia del calentador abierta",
+      "Falla en el cableado del calentador",
+      "Fusible del circuito del calentador fundido"
+    ],
+    "soluciones": [
+      "Comprobar voltaje de alimentación al calentador",
+      "Reemplazar sensor trasero (Post-catalizador)",
+      "Verificar fusible del calentador O2"
+    ]
+  },
+  {
+    "codigo": "P0150",
+    "descripcion": "O2 Sensor Circuit Malfunction (Bank 2 Sensor 1)",
+    "system": "Exhaust System",
+    "sintomas": [
+      "Ralentí inestable o motor tembloroso",
+      "Humo negro por el escape (lado del banco 2)",
+      "Pérdida de potencia al acelerar",
+      "Consumo de combustible elevado"
+    ],
+    "causas_probables": [
+      "Falla en sensor lado opuesto (motores en V)",
+      "Cableado dañado Banco 2",
+      "Contaminación del sensor por aceite o anticongelante"
+    ],
+    "soluciones": [
+      "Verificar cableado Banco 2",
+      "Reemplazar sensor O2 B2S1",
+      "Reparar fugas de aceite que contaminen el sensor"
+    ]
+  },
+  {
+    "codigo": "P0171",
+    "descripcion": "System Too Lean (Bank 1)",
+    "system": "Fuel System",
+    "sintomas": [
+      "Jaloneos o titubeos al acelerar",
+      "Motor se apaga en baja velocidad",
+      "Detonación o cascabeleo al subir pendientes",
+      "Falta de potencia general",
+      "El motor se calienta más de lo normal"
+    ],
+    "causas_probables": [
+      "Fuga de vacío (mangueras rotas, juntas de admisión)",
+      "Inyectores sucios u obstruidos",
+      "Baja presión de bomba de gasolina",
+      "Sensor MAF sucio"
+    ],
+    "soluciones": [
+      "Hacer prueba de humo para fugas de vacío",
+      "Limpiar inyectores",
+      "Medir presión de riel de combustible",
+      "Limpiar MAF con spray especial"
+    ]
+  },
+  {
+    "codigo": "P0172",
+    "descripcion": "System Too Rich (Bank 1)",
+    "system": "Fuel System",
+    "sintomas": [
+      "Humo negro visible en el escape",
+      "Olor fuerte a gasolina cruda",
+      "Bujías negras (llenas de hollín)",
+      "Consumo de gasolina extremadamente alto",
+      "El motor se siente 'pesado' o ahogado"
+    ],
+    "causas_probables": [
+      "Inyector goteando (no cierra)",
+      "Alta presión de combustible (regulador dañado)",
+      "Filtro de aire tapado",
+      "Falla en sensor de oxígeno (leyendo mal)"
+    ],
+    "soluciones": [
+      "Prueba de balance de inyectores",
+      "Cambiar regulador de presión de gasolina",
+      "Revisar sensor O2 y filtro de aire"
+    ]
+  },
+  {
+    "codigo": "P0174",
+    "descripcion": "System Too Lean (Bank 2)",
+    "system": "Fuel System",
+    "sintomas": [
+      "Ralentí inestable",
+      "Tosido o explosiones por la admisión",
+      "Pérdida de fuerza en alta velocidad",
+      "Códigos de falla de encendido (Misfire) en cilindros del banco 2"
+    ],
+    "causas_probables": [
+      "Fuga de vacío en múltiple de admisión (lado Banco 2)",
+      "Falla en inyectores Banco 2",
+      "Sensor MAF (afecta ambos bancos pero puede marcar solo uno primero)"
+    ],
+    "soluciones": [
+      "Revisar empaques del múltiple de admisión",
+      "Limpiar inyectores",
+      "Verificar lecturas de sensores O2 Banco 2"
+    ]
+  },
+  {
+    "codigo": "P0175",
+    "descripcion": "System Too Rich (Bank 2)",
+    "system": "Fuel System",
+    "sintomas": [
+      "Olor a huevo podrido (convertidor catalítico saturado)",
+      "Humo negro por el lado del escape del banco 2",
+      "El motor falla o vibra en ralentí",
+      "Bujías del banco 2 mojadas de gasolina"
+    ],
+    "causas_probables": [
+      "Inyector goteando en Banco 2",
+      "Falla de encendido (misfire) que no quema el combustible",
+      "Sensor O2 B2 defectuoso"
+    ],
+    "soluciones": [
+      "Verificar bujías y bobinas Banco 2",
+      "Revisar inyectores en banco de pruebas",
+      "Cambiar sensor O2 B2S1"
+    ]
+  },
+  {
+    "codigo": "P0180",
+    "descripcion": "Fuel Temperature Sensor A Circuit Malfunction",
+    "system": "Fuel System",
+    "sintomas": [
+      "El auto arranca pero se apaga enseguida",
+      "Dificultad de arranque en climas extremos (muy frío o muy caliente)",
+      "Lecturas erráticas de temperatura de combustible en escáner",
+      "Check engine encendido sin fallas graves de conducción"
+    ],
+    "causas_probables": [
+      "Sensor de temperatura de combustible dañado (común en Diesel)",
+      "Cableado corroído",
+      "Falla en ECM"
+    ],
+    "soluciones": [
+      "Inspeccionar conector del sensor",
+      "Reemplazar sensor de temp. combustible"
+    ]
+  },
+  {
+    "codigo": "P0190",
+    "descripcion": "Fuel Rail Pressure Sensor Circuit Malfunction",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor no arranca (crank no start)",
+      "Falta total de potencia",
+      "El motor entra en modo de seguridad (Limp Mode)",
+      "Corte de inyección repentino"
+    ],
+    "causas_probables": [
+      "Sensor de presión de riel dañado",
+      "Cableado en corto",
+      "Bomba de alta presión fallando"
+    ],
+    "soluciones": [
+      "Verificar voltaje del sensor",
+      "Comprobar presión real con manómetro mecánico",
+      "Reemplazar sensor FRP"
+    ]
+  },
+  {
+    "codigo": "P0195",
+    "descripcion": "Engine Oil Temperature Sensor Malfunction",
+    "system": "Engine Mechanical",
+    "sintomas": [
+      "Aviso de temperatura de aceite en tablero",
+      "El motor no permite altas revoluciones (protección)",
+      "Lectura de temperatura de aceite fija (ej. -40C o 150C)",
+      "Posible sobrecalentamiento real no detectado"
+    ],
+    "causas_probables": [
+      "Sensor de temperatura de aceite dañado",
+      "Problema en el arnés",
+      "Nivel de aceite crítico o aceite muy degradado"
+    ],
+    "soluciones": [
+      "Verificar nivel y calidad del aceite",
+      "Medir resistencia del sensor",
+      "Cambiar sensor EOT"
+    ]
+  },
+  {
+    "codigo": "P0200",
+    "descripcion": "Injector Circuit Malfunction (General)",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor se apaga repentinamente",
+      "Vibración severa del motor",
+      "Falla de encendido en múltiples cilindros",
+      "Humo por el escape debido a combustible no quemado"
+    ],
+    "causas_probables": [
+      "Problema en el cableado común de inyectores",
+      "Falla en el driver de inyección de la ECU",
+      "Relé de inyección defectuoso"
+    ],
+    "soluciones": [
+      "Revisar fusibles y relés de inyección",
+      "Comprobar continuidad del arnés",
+      "Verificar ECU (Driver de inyectores)"
+    ]
+  },
+  {
+    "codigo": "P0201",
+    "descripcion": "Injector Circuit Malfunction - Cylinder 1",
+    "system": "Fuel System",
+    "sintomas": [
+      "Falla de encendido (Misfire) constante en el cilindro 1",
+      "Vibración notable del motor en ralentí",
+      "Pérdida de potencia al acelerar",
+      "Olor a combustible sin quemar en el escape"
+    ],
+    "causas_probables": [
+      "Inyector 1 con bobina abierta (resistencia infinita)",
+      "Conector del inyector 1 suelto o sulfatado",
+      "Cable de señal cortado o en corto a tierra"
+    ],
+    "soluciones": [
+      "Medir resistencia del inyector 1 (comparar con especificación)",
+      "Usar luz Noid para verificar pulso de inyección",
+      "Cambiar inyector 1 si la resistencia está fuera de rango"
+    ]
+  },
+  {
+    "codigo": "P0202",
+    "descripcion": "Injector Circuit Malfunction - Cylinder 2",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor tiembla o se sacude",
+      "Luz Check Engine parpadeando (indicando daño potencial al catalizador)",
+      "Dificultad para mantener el motor encendido",
+      "Consumo de combustible irregular"
+    ],
+    "causas_probables": [
+      "Inyector 2 con bobina abierta",
+      "Cableado dañado por calor del motor",
+      "Falla de driver de inyección en la ECM"
+    ],
+    "soluciones": [
+      "Intercambiar inyector con otro cilindro para descartar falla del componente",
+      "Verificar pulso de inyección con osciloscopio o luz Noid",
+      "Reemplazar inyector 2"
+    ]
+  },
+  {
+    "codigo": "P0203",
+    "descripcion": "Injector Circuit Malfunction - Cylinder 3",
+    "system": "Fuel System",
+    "sintomas": [
+      "Pérdida de potencia significativa bajo carga",
+      "Sonido de 'puf puf' en el escape (falla de cilindro)",
+      "El motor se apaga al detenerse",
+      "Aumento de emisiones contaminantes"
+    ],
+    "causas_probables": [
+      "Inyector 3 defectuoso internamente",
+      "Problema de arnés (roce con partes metálicas)",
+      "Suciedad o corrosión en el conector eléctrico"
+    ],
+    "soluciones": [
+      "Limpiar conector eléctrico con limpiador de contactos",
+      "Medir ohms del inyector y comparar con los demás",
+      "Cambiar inyector 3"
+    ]
+  },
+  {
+    "codigo": "P0204",
+    "descripcion": "Injector Circuit Malfunction - Cylinder 4",
+    "system": "Fuel System",
+    "sintomas": [
+      "Marcha mínima inestable",
+      "El vehículo se siente 'lento' al arrancar",
+      "Vibración que se siente en el volante",
+      "Humo negro si el inyector se quedó abierto (menos común en este código)"
+    ],
+    "causas_probables": [
+      "Inyector 4 con circuito abierto",
+      "Cable de control haciendo tierra (corto)",
+      "Conector de plástico roto o desconectado"
+    ],
+    "soluciones": [
+      "Verificar integridad física del conector",
+      "Prueba de luz Noid para confirmar señal de la ECU",
+      "Cambiar inyector 4"
+    ]
+  },
+  {
+    "codigo": "P0205",
+    "descripcion": "Injector Circuit Malfunction - Cylinder 5",
+    "system": "Fuel System",
+    "sintomas": [
+      "Falla de cilindro 5 constante",
+      "El motor suena disparejo",
+      "Respuesta pobre del acelerador",
+      "Posible olor a gasolina"
+    ],
+    "causas_probables": [
+      "Inyector 5 defectuoso",
+      "Cableado dañado por calor excesivo (común en motores en V)",
+      "Falla en driver de cilindro 5 en la computadora"
+    ],
+    "soluciones": [
+      "Inspección visual del cableado buscando derretimiento",
+      "Prueba de resistencia del inyector",
+      "Reemplazar inyector 5"
+    ]
+  },
+  {
+    "codigo": "P0206",
+    "descripcion": "Injector Circuit Malfunction - Cylinder 6",
+    "system": "Fuel System",
+    "sintomas": [
+      "Motor desbalanceado",
+      "Vibración excesiva",
+      "Falla de potencia notable en subidas",
+      "Luz de servicio activa"
+    ],
+    "causas_probables": [
+      "Bobina del inyector 6 abierta",
+      "Cableado dañado o cortado",
+      "Driver del ECM dañado"
+    ],
+    "soluciones": [
+      "Medir resistencia del inyector 6",
+      "Verificar pulso con luz Noid",
+      "Reemplazar inyector 6"
+    ]
+  },
+  {
+    "codigo": "P0215",
+    "descripcion": "Engine Shutoff Solenoid Malfunction",
+    "system": "Fuel System (Diesel)",
+    "sintomas": [
+      "El motor no se apaga al girar la llave a OFF (Diesel)",
+      "El motor no arranca (solenoide no abre paso de combustible)",
+      "El motor se apaga repentinamente mientras se conduce"
+    ],
+    "causas_probables": [
+      "Solenoide de paro dañado o atascado",
+      "Cableado cortado hacia el solenoide",
+      "Falla en el relevador de paro de motor"
+    ],
+    "soluciones": [
+      "Verificar voltaje al solenoide al girar la llave",
+      "Revisar continuidad del cableado",
+      "Reemplazar solenoide de corte de combustible"
+    ]
+  },
+  {
+    "codigo": "P0216",
+    "descripcion": "Injection Timing Control Circuit Malfunction",
+    "system": "Fuel System (Diesel)",
+    "sintomas": [
+      "Humo blanco o negro excesivo al arrancar",
+      "Motor muy ruidoso (golpeteo Diesel)",
+      "Pérdida severa de potencia",
+      "Dificultad de arranque"
+    ],
+    "causas_probables": [
+      "Falla en bomba de inyección (VP44 en Dodge Cummins es común)",
+      "Sensor de posición del cigüeñal desalineado",
+      "Módulo de control de bomba dañado"
+    ],
+    "soluciones": [
+      "Verificar puesta a tiempo de la bomba",
+      "Revisar arnés de la bomba por corrosión",
+      "Reemplazar actuador de tiempo o bomba de inyección"
+    ]
+  },
+  {
+    "codigo": "P0218",
+    "descripcion": "Transmission Fluid Temperature Overtemperature Condition",
+    "system": "Transmission",
+    "sintomas": [
+      "Luz de advertencia de temperatura de transmisión encendida",
+      "Olor a aceite quemado",
+      "La transmisión patina o no cambia de marcha",
+      "El fluido se ve oscuro o negro"
+    ],
+    "causas_probables": [
+      "Bajo nivel de aceite de transmisión",
+      "Refrigerador de aceite tapado o sucio",
+      "Deslizamiento excesivo del convertidor de par (generando calor)"
+    ],
+    "soluciones": [
+      "Revisar nivel y estado del ATF inmediatamente",
+      "Limpiar radiador de aceite externo",
+      "Verificar operación del convertidor de par"
+    ]
+  },
+  {
+    "codigo": "P0219",
+    "descripcion": "Engine Overspeed Condition",
+    "system": "Engine Mechanical",
+    "sintomas": [
+      "El motor se revolucionó excesivamente (RPM en zona roja)",
+      "Posible ruido de válvulas flotando",
+      "El código aparece después de un cambio de marcha erróneo (ej. de 5ta a 2da)",
+      "Generalmente no afecta la conducción si no hubo daño mecánico"
+    ],
+    "causas_probables": [
+      "Cambio de marcha incorrecto (transmisión manual)",
+      "Falla en sensor de cigüeñal (falsas lecturas de RPM)",
+      "Resorte de válvula roto (causando embalamiento en casos raros)"
+    ],
+    "soluciones": [
+      "Borrar código y monitorear (si fue error de conductor)",
+      "Revisar sensor CKP por interferencia",
+      "Inspección mecánica del tren de válvulas si hay ruido"
+    ]
+  },
+  {
+    "codigo": "P0220",
+    "descripcion": "Throttle/Pedal Position Sensor/Switch B Circuit Malfunction",
+    "system": "Fuel System",
+    "sintomas": [
+      "El auto entra en modo 'Limp Home' (velocidad limitada)",
+      "No responde al acelerador",
+      "La luz del rayo (ETC) se enciende en el tablero",
+      "Ralentí alto forzado"
+    ],
+    "causas_probables": [
+      "Sensor TPS/APP B (Pedal) defectuoso",
+      "Pista del potenciómetro sucia o gastada",
+      "Desalineación del cuerpo de aceleración"
+    ],
+    "soluciones": [
+      "Limpiar cuerpo de aceleración",
+      "Revisar voltaje de referencia (5V) al pedal",
+      "Reemplazar pedal electrónico o cuerpo de aceleración"
+    ]
+  },
+  {
+    "codigo": "P0230",
+    "descripcion": "Fuel Pump Primary Circuit Malfunction",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor no arranca (gira pero no prende)",
+      "La bomba de gasolina no zumba al abrir la llave",
+      "El motor se apaga de repente",
+      "No hay presión de combustible en el riel"
+    ],
+    "causas_probables": [
+      "Relevador de bomba de combustible dañado",
+      "Fusible de la bomba quemado",
+      "Circuito de control del ECM abierto (cable cortado)"
+    ],
+    "soluciones": [
+      "Probar e intercambiar el relevador de la bomba",
+      "Verificar fusibles de bomba de combustible",
+      "Rastrear cableado desde la caja de fusibles a la ECU"
+    ]
+  },
+  {
+    "codigo": "P0231",
+    "descripcion": "Fuel Pump Secondary Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor se apaga inmediatamente",
+      "No arranca después de un golpe o bache fuerte",
+      "Bomba de combustible inoperativa"
+    ],
+    "causas_probables": [
+      "Interruptor de inercia disparado (Fuel Cut-off switch)",
+      "Cable hacia la bomba cortado o haciendo tierra",
+      "Relevador de bomba pegado en abierto"
+    ],
+    "soluciones": [
+      "Restablecer interruptor de inercia (buscar botón rojo/negro)",
+      "Verificar voltaje en conector de bomba (debe haber 12V al dar marcha)",
+      "Cambiar relevador de la bomba"
+    ]
+  },
+  {
+    "codigo": "P0234",
+    "descripcion": "Turbocharger/Supercharger Overboost Condition",
+    "system": "Air Intake (Turbo)",
+    "sintomas": [
+      "Corte de inyección brusco al acelerar a fondo (Fuel Cut)",
+      "Posible daño al motor si persiste",
+      "Luz de Check Engine encendida",
+      "El auto se siente muy potente justo antes de fallar"
+    ],
+    "causas_probables": [
+      "Válvula Wastegate atascada cerrada (no libera presión)",
+      "Solenoide de control de boost dañado o mangueras invertidas",
+      "Sensor MAP/Boost leyendo mal (indica más presión de la real)"
+    ],
+    "soluciones": [
+      "Verificar movimiento libre de la varilla del Wastegate",
+      "Probar solenoide de vacío y sus mangueras",
+      "Reemplazar sensor de presión de turbo si la lectura es errónea"
+    ]
+  },
+  {
+    "codigo": "P0235",
+    "descripcion": "Turbocharger Boost Sensor A Circuit Malfunction",
+    "system": "Air Intake (Turbo)",
+    "sintomas": [
+      "Falta de potencia (el turbo no entra)",
+      "Humo negro excesivo (Diesel)",
+      "Consumo alto de combustible",
+      "El motor trabaja en modo atmosférico (sin boost)"
+    ],
+    "causas_probables": [
+      "Sensor de presión MAP/Boost dañado",
+      "Cableado abierto hacia el sensor",
+      "Fuga o desconexión en manguera hacia el sensor"
+    ],
+    "soluciones": [
+      "Revisar mangueras de vacío conectadas al sensor",
+      "Medir voltaje de señal del sensor (debe variar al acelerar)",
+      "Reemplazar sensor de Boost"
+    ]
+  },
+  {
+    "codigo": "P0243",
+    "descripcion": "Turbocharger Wastegate Solenoid A Malfunction",
+    "system": "Air Intake (Turbo)",
+    "sintomas": [
+      "Presión de turbo incontrolable (muy alta o muy baja)",
+      "Pérdida de potencia o jaloneos",
+      "Ruido de aire al acelerar"
+    ],
+    "causas_probables": [
+      "Bobina del solenoide abierta",
+      "Conector del solenoide desconectado",
+      "Driver del ECM quemado"
+    ],
+    "soluciones": [
+      "Medir resistencia del solenoide (normalmente 20-50 ohms)",
+      "Limpiar contactos eléctricos",
+      "Reemplazar solenoide de Wastegate"
+    ]
+  },
+  {
+    "codigo": "P0251",
+    "descripcion": "Injection Pump Fuel Metering Control 'A' Malfunction",
+    "system": "Fuel System (Diesel)",
+    "sintomas": [
+      "Motor entra en modo de seguridad",
+      "Se apaga al exigir potencia",
+      "Ralentí inestable",
+      "Ruido excesivo de inyección"
+    ],
+    "causas_probables": [
+      "Válvula de control de presión de riel (FRP) dañada",
+      "Filtro de combustible tapado (restricción de flujo)",
+      "Aire en sistema de combustible (Diesel)"
+    ],
+    "soluciones": [
+      "Cambiar filtro de combustible (primer paso crítico)",
+      "Purgar sistema de inyección para eliminar aire",
+      "Reemplazar regulador de caudal en la bomba de alta presión"
+    ]
+  },
+  {
+    "codigo": "P0261",
+    "descripcion": "Cylinder 1 Injector Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "Falla de encendido (Misfire) constante en cilindro 1",
+      "El motor vibra mucho en ralentí",
+      "Olor a combustible crudo por el escape",
+      "Pérdida notable de potencia al acelerar"
+    ],
+    "causas_probables": [
+      "Cable de señal en corto a tierra",
+      "Bobina del inyector en corto",
+      "Conector suelto o pines doblados"
+    ],
+    "soluciones": [
+      "Verificar continuidad a tierra en el cableado",
+      "Medir resistencia del inyector (comparar con otros)",
+      "Reparar arnés o reemplazar conector"
+    ]
+  },
+  {
+    "codigo": "P0262",
+    "descripcion": "Cylinder 1 Injector Circuit High",
+    "system": "Fuel System",
+    "sintomas": [
+      "El inyector 1 podría quedarse abierto (goteando)",
+      "Humo negro excesivo",
+      "Posible daño al catalizador por exceso de combustible",
+      "El motor se ahoga al intentar arrancar"
+    ],
+    "causas_probables": [
+      "Bobina del inyector abierta (resistencia infinita)",
+      "Cable de señal en corto a voltaje positivo",
+      "Falla en driver de inyección de la ECM"
+    ],
+    "soluciones": [
+      "Desconectar inyector y medir voltaje de alimentación",
+      "Reemplazar inyector 1",
+      "Revisar ECM si el cableado está bien"
+    ]
+  },
+  {
+    "codigo": "P0263",
+    "descripcion": "Cylinder 1 Contribution/Balance",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor se siente disparejo en marcha mínima",
+      "Consumo de combustible ligeramente elevado",
+      "La falla es menos severa que un circuito abierto",
+      "Pequeños jaloneos a velocidad constante"
+    ],
+    "causas_probables": [
+      "Inyector parcialmente obstruido (sucio)",
+      "Baja compresión en cilindro 1",
+      "Problema mecánico en cilindro 1 (balancín suelto, válvula quemada)"
+    ],
+    "soluciones": [
+      "Limpieza de inyectores por laboratorio (ultrasonido)",
+      "Prueba de compresión y fuga de cilindros",
+      "Revisar bujía cilindro 1"
+    ]
+  },
+  {
+    "codigo": "P0264",
+    "descripcion": "Cylinder 2 Injector Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "Motor funcionando en 3 o menos cilindros",
+      "Luz de Check Engine parpadeando",
+      "Dificultad para subir pendientes",
+      "Ruido de escape irregular"
+    ],
+    "causas_probables": [
+      "Corto a tierra en circuito inyector 2",
+      "Inyector defectuoso (bobina en corto)",
+      "Falla de arnés (cables pelados tocando motor)"
+    ],
+    "soluciones": [
+      "Inspección visual de cables pelados",
+      "Medir resistencia inyector 2",
+      "Cambiar inyector"
+    ]
+  },
+  {
+    "codigo": "P0267",
+    "descripcion": "Cylinder 3 Injector Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "Vibración fuerte en el volante",
+      "El motor intenta apagarse en semáforos",
+      "Respuesta lenta del acelerador",
+      "Consumo alto de gasolina"
+    ],
+    "causas_probables": [
+      "Corto a tierra en circuito inyector 3",
+      "Conector dañado (clip roto)",
+      "Inyector en corto interno"
+    ],
+    "soluciones": [
+      "Verificar integridad del conector",
+      "Prueba de luz Noid para confirmar pulso",
+      "Cambiar inyector 3"
+    ]
+  },
+  {
+    "codigo": "P0270",
+    "descripcion": "Cylinder 4 Injector Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "Falla de encendido constante en cilindro 4",
+      "Olor a huevo podrido (catalizador sobrecalentado)",
+      "El motor suena como si tuviera escape roto",
+      "Falta de potencia"
+    ],
+    "causas_probables": [
+      "Corto a tierra en circuito inyector 4",
+      "Cableado rozando metal del motor",
+      "Falla interna de la bobina del inyector"
+    ],
+    "soluciones": [
+      "Rastrear corto en cableado",
+      "Medir resistencia",
+      "Sustituir inyector 4"
+    ]
+  },
+  {
+    "codigo": "P0273",
+    "descripcion": "Cylinder 5 Injector Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "Motor inestable",
+      "Luz MIL encendida",
+      "Posible humo negro",
+      "Falla perceptible en ralentí"
+    ],
+    "causas_probables": [
+      "Corto a tierra en circuito inyector 5",
+      "Problema eléctrico en el mazo de cables",
+      "Inyector dañado"
+    ],
+    "soluciones": [
+      "Verificar arnés del motor",
+      "Probar driver con osciloscopio",
+      "Cambiar inyector 5"
+    ]
+  },
+  {
+    "codigo": "P0276",
+    "descripcion": "Cylinder 6 Injector Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "Pérdida de potencia en motores V6/L6",
+      "Vibración armónica del motor",
+      "Aumento de consumo",
+      "Falla de cilindro persistente"
+    ],
+    "causas_probables": [
+      "Corto a tierra en circuito inyector 6",
+      "Falla de aislamiento en cables",
+      "Inyector defectuoso"
+    ],
+    "soluciones": [
+      "Reparar cableado",
+      "Medir resistencia",
+      "Cambiar inyector 6"
+    ]
+  },
+  {
+    "codigo": "P0282",
+    "descripcion": "Cylinder 8 Injector Circuit Low",
+    "system": "Fuel System",
+    "sintomas": [
+      "Falla de encendido en motores V8",
+      "Pérdida de potencia bajo carga pesada",
+      "Ralentí irregular",
+      "Testigo de avería motor encendido"
+    ],
+    "causas_probables": [
+      "Corto a tierra en circuito inyector 8",
+      "Problema en conector",
+      "Inyector en corto"
+    ],
+    "soluciones": [
+      "Limpiar conectores",
+      "Verificar pulsos",
+      "Reemplazar inyector 8"
+    ]
+  },
+  {
+    "codigo": "P0300",
+    "descripcion": "Random/Multiple Cylinder Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "El motor falla de forma aleatoria (no siempre el mismo cilindro)",
+      "Jaloneos al acelerar desde bajas RPM",
+      "Dificultad para arrancar en frío",
+      "Check engine parpadea bajo carga"
+    ],
+    "causas_probables": [
+      "Fuga de vacío múltiple (afecta a todos los cilindros)",
+      "Baja presión de combustible (bomba débil)",
+      "Bobinas de encendido defectuosas o bujías viejas",
+      "Combustible contaminado"
+    ],
+    "soluciones": [
+      "Revisar fugas de admisión con humo",
+      "Hacer afinación completa (bujías/filtros)",
+      "Verificar presión de bomba de gasolina en el riel"
+    ]
+  },
+  {
+    "codigo": "P0301",
+    "descripcion": "Cylinder 1 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla constante en cilindro 1",
+      "El escape hace ruido rítmico (puf-puf)",
+      "Vibración en ralentí",
+      "Pérdida de potencia"
+    ],
+    "causas_probables": [
+      "Bobina de encendido 1 dañada o débil",
+      "Bujía 1 sucia, gastada o con gap incorrecto",
+      "Inyector 1 tapado",
+      "Baja compresión cilindro 1"
+    ],
+    "soluciones": [
+      "Intercambiar bobina con otro cilindro para ver si la falla se mueve",
+      "Cambiar bujía",
+      "Medir compresión"
+    ]
+  },
+  {
+    "codigo": "P0302",
+    "descripcion": "Cylinder 2 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Motor tembloroso",
+      "Luz de check engine parpadeando",
+      "Olor a gasolina cruda",
+      "Dificultad para acelerar"
+    ],
+    "causas_probables": [
+      "Bobina de encendido 2 defectuosa",
+      "Cable de bujía dañado (si aplica)",
+      "Problema mecánico en cilindro 2"
+    ],
+    "soluciones": [
+      "Probar chispa en cilindro 2",
+      "Cambiar componentes de encendido",
+      "Prueba de fugas de cilindro"
+    ]
+  },
+  {
+    "codigo": "P0303",
+    "descripcion": "Cylinder 3 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla de cilindro específica",
+      "Consumo de combustible elevado",
+      "Marcha mínima inestable",
+      "Posible humo negro"
+    ],
+    "causas_probables": [
+      "Falla de encendido cilindro 3 (bobina/bujía)",
+      "Inyector 3 goteando o sucio",
+      "Válvula quemada (baja compresión)"
+    ],
+    "soluciones": [
+      "Revisar bobina y bujía 3",
+      "Escuchar inyector con estetoscopio",
+      "Prueba de compresión"
+    ]
+  },
+  {
+    "codigo": "P0304",
+    "descripcion": "Cylinder 4 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "El motor pierde fuerza en subidas",
+      "Vibración notable",
+      "Testigo de motor encendido",
+      "Sonido anormal del escape"
+    ],
+    "causas_probables": [
+      "Bobina o bujía 4 dañada",
+      "Empaque de cabeza quemado cerca del cil 4 (pérdida de refrigerante)",
+      "Inyector sucio"
+    ],
+    "soluciones": [
+      "Mantenimiento al sistema de encendido",
+      "Verificar presencia de refrigerante en cilindro (humo blanco)",
+      "Limpieza de inyectores"
+    ]
+  },
+  {
+    "codigo": "P0305",
+    "descripcion": "Cylinder 5 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla de encendido en cilindro 5",
+      "Motor inestable",
+      "Consumo alto",
+      "Luz MIL activa"
+    ],
+    "causas_probables": [
+      "Falla de chispa cilindro 5",
+      "Problema de mezcla aire/gasolina",
+      "Desgaste de levas (árbol de levas plano)"
+    ],
+    "soluciones": [
+      "Revisar sistema de encendido cil 5",
+      "Verificar inyector",
+      "Inspección mecánica"
+    ]
+  },
+  {
+    "codigo": "P0306",
+    "descripcion": "Cylinder 6 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Motor funciona disparejo",
+      "Falta de potencia",
+      "Vibración excesiva",
+      "Olor a combustible"
+    ],
+    "causas_probables": [
+      "Bobina 6 muerta",
+      "Bujía con carbón o aceite",
+      "Fuga de vacío en puerto de admisión 6"
+    ],
+    "soluciones": [
+      "Reemplazar bobina/bujía",
+      "Revisar empaques de admisión",
+      "Prueba de balance de cilindros"
+    ]
+  },
+  {
+    "codigo": "P0307",
+    "descripcion": "Cylinder 7 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla en cilindro 7 (V8)",
+      "Vibración",
+      "Luz de servicio",
+      "Pérdida de rendimiento"
+    ],
+    "causas_probables": [
+      "Falla de encendido cil 7",
+      "Inyector desconectado",
+      "Baja compresión"
+    ],
+    "soluciones": [
+      "Verificar cableado de inyector y bobina",
+      "Medir compresión",
+      "Reemplazar bujía"
+    ]
+  },
+  {
+    "codigo": "P0308",
+    "descripcion": "Cylinder 8 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla de cilindro 8",
+      "Motor inestable en baja",
+      "Consumo elevado",
+      "Ruido de escape"
+    ],
+    "causas_probables": [
+      "Falla de encendido cil 8",
+      "Inyector obstruido",
+      "Problema de válvulas"
+    ],
+    "soluciones": [
+      "Intercambiar componentes para aislar falla",
+      "Limpieza de inyectores",
+      "Reparación mecánica si la compresión es baja"
+    ]
+  },
+  {
+    "codigo": "P0309",
+    "descripcion": "Cylinder 9 Misfire Detected",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla en cilindro 9 (V10/V12)",
+      "Vibración",
+      "Pérdida de potencia",
+      "Check engine"
+    ],
+    "causas_probables": [
+      "Falla de encendido cilindro 9",
+      "Inyector 9 obstruido",
+      "Problema mecánico cilindro 9"
+    ],
+    "soluciones": [
+      "Revisar bobina y bujía 9",
+      "Prueba de compresión",
+      "Intercambiar inyector"
+    ]
+  },
+  {
+    "codigo": "P0320",
+    "descripcion": "Ignition/Distributor Engine Speed Input Circuit Malfunction",
+    "system": "Ignition System",
+    "sintomas": [
+      "El motor gira pero no arranca (No Start)",
+      "El tacómetro (RPM) no se mueve al dar marcha",
+      "El motor se apaga repentinamente",
+      "Fallas de encendido intermitentes"
+    ],
+    "causas_probables": [
+      "Falla en sensor de posición del cigüeñal/levas",
+      "Cableado del sensor de velocidad abierto",
+      "Batería baja afectando la señal"
+    ],
+    "soluciones": [
+      "Revisar conectores del sensor de velocidad",
+      "Cargar batería y verificar alternador",
+      "Reemplazar sensor de velocidad de entrada"
+    ]
+  },
+  {
+    "codigo": "P0325",
+    "descripcion": "Knock Sensor 1 Circuit Malfunction (Bank 1)",
+    "system": "Ignition System",
+    "sintomas": [
+      "Pérdida de potencia (la ECU retrasa el tiempo)",
+      "Cascabeleo audible bajo carga",
+      "Consumo de combustible aumentado",
+      "El motor se siente 'lento' o sin brío"
+    ],
+    "causas_probables": [
+      "Sensor de detonación defectuoso",
+      "Conector sulfatado o roto",
+      "Perno de montaje del sensor flojo (vibración falsa)"
+    ],
+    "soluciones": [
+      "Verificar apriete del sensor al torque correcto",
+      "Medir resistencia del sensor",
+      "Reemplazar Knock Sensor 1"
+    ]
+  },
+  {
+    "codigo": "P0335",
+    "descripcion": "Crankshaft Position Sensor A Circuit Malfunction",
+    "system": "Ignition System",
+    "sintomas": [
+      "El motor NO ARRANCA",
+      "El motor se apaga en caliente y no vuelve a prender hasta que enfría",
+      "El tacómetro no marca RPM al dar marcha",
+      "Jaloneos violentos mientras se conduce"
+    ],
+    "causas_probables": [
+      "Sensor CKP dañado internamente",
+      "Aro dentado (reluctor) dañado o sin dientes",
+      "Cableado cortado cerca del escape (quemado)"
+    ],
+    "soluciones": [
+      "Revisar integridad del cableado",
+      "Inspeccionar el aro reluctor a través del orificio del sensor",
+      "Reemplazar sensor CKP"
+    ]
+  },
+  {
+    "codigo": "P0336",
+    "descripcion": "Crankshaft Position Sensor A Circuit Range/Performance",
+    "system": "Ignition System",
+    "sintomas": [
+      "Arranque largo o difícil",
+      "Fallas de encendido a altas revoluciones",
+      "El motor falla y se recupera",
+      "Luz Check Engine encendida"
+    ],
+    "causas_probables": [
+      "Sensor CKP mal instalado (gap incorrecto)",
+      "Interferencia eléctrica en la señal (ruido)",
+      "Dientes del volante motor rotos o sucios"
+    ],
+    "soluciones": [
+      "Ajustar distancia del sensor",
+      "Revisar blindaje del cable",
+      "Cambiar sensor CKP"
+    ]
+  },
+  {
+    "codigo": "P0340",
+    "descripcion": "Camshaft Position Sensor Circuit Malfunction",
+    "system": "Ignition System",
+    "sintomas": [
+      "El motor tarda mucho en arrancar",
+      "Arranque difícil",
+      "Pérdida de potencia",
+      "Consumo de combustible elevado"
+    ],
+    "causas_probables": [
+      "Sensor CMP defectuoso",
+      "Cableado abierto o en corto",
+      "Batería débil (afecta arranque y señal)"
+    ],
+    "soluciones": [
+      "Comprobar voltaje de alimentación (12V o 5V) al sensor",
+      "Verificar continuidad del arnés",
+      "Reemplazar sensor CMP"
+    ]
+  },
+  {
+    "codigo": "P0341",
+    "descripcion": "Camshaft Position Sensor Circuit Range/Performance",
+    "system": "Ignition System",
+    "sintomas": [
+      "Ruido en la cadena de distribución",
+      "Ralentí inestable",
+      "El motor corre áspero",
+      "Posible daño interno si saltó el tiempo"
+    ],
+    "causas_probables": [
+      "Tiempo del motor saltado (cadena/banda estirada)",
+      "Sensor CMP flojo",
+      "Interferencia magnética"
+    ],
+    "soluciones": [
+      "Verificar sincronización del tiempo mecánico",
+      "Apretar sensor",
+      "Revisar tensor de cadena/correa"
+    ]
+  },
+  {
+    "codigo": "P0351",
+    "descripcion": "Ignition Coil A Primary/Secondary Circuit",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla de encendido constante en cilindro 1",
+      "Vibración del motor",
+      "Olor a gasolina",
+      "Check engine parpadeando"
+    ],
+    "causas_probables": [
+      "Bobina de encendido A (Cil 1) defectuosa",
+      "Conector de la bobina roto o pines abiertos",
+      "Falla en driver de la ECU (computadora)"
+    ],
+    "soluciones": [
+      "Intercambiar bobina para prueba",
+      "Verificar pulsos de activación con lámpara lógica",
+      "Reemplazar Bobina A"
+    ]
+  },
+  {
+    "codigo": "P0352",
+    "descripcion": "Ignition Coil B Primary/Secondary Circuit",
+    "system": "Ignition System",
+    "sintomas": [
+      "Falla de encendido constante en cilindro 2 (o el asociado a Bobina B)",
+      "El motor vibra excesivamente en ralentí",
+      "Olor a combustible crudo por el escape",
+      "La luz de Check Engine parpadea bajo aceleración"
+    ],
+    "causas_probables": [
+      "Bobina de encendido B defectuosa (quemada)",
+      "Cableado abierto o conector roto hacia la bobina",
+      "Driver de ignición en la ECU dañado"
+    ],
+    "soluciones": [
+      "Intercambiar bobina B con otra para confirmar falla",
+      "Revisar arnés buscando cables derretidos o rotos",
+      "Verificar tierra de la bobina y señal de pulso"
+    ]
+  },
+  {
+    "codigo": "P0380",
+    "descripcion": "Glow Plug/Heater Circuit 'A' Malfunction",
+    "system": "Ignition System (Diesel)",
+    "sintomas": [
+      "El motor Diesel tarda mucho en arrancar en frío",
+      "Humo blanco excesivo al arrancar",
+      "El motor suena muy ruidoso los primeros segundos",
+      "Luz de precalentamiento (espiral) parpadea o no enciende"
+    ],
+    "causas_probables": [
+      "Una o varias bujías de precalentamiento quemadas",
+      "Relé de bujías incandescentes dañado",
+      "Fusible de alta corriente (ej. 50A) fundido"
+    ],
+    "soluciones": [
+      "Medir resistencia de cada bujía incandescente (debe ser baja, < 2 ohms)",
+      "Cambiar módulo de control de bujías",
+      "Reemplazar fusible y buscar corto circuito"
+    ]
+  },
+  {
+    "codigo": "P0400",
+    "descripcion": "Exhaust Gas Recirculation (EGR) Flow Malfunction",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "Detonación o cascabeleo (pinging) al acelerar",
+      "Aumento en la temperatura de combustión (NOx altos)",
+      "El motor se siente un poco más potente de lo normal (EGR reduce potencia)",
+      "Falla en prueba de emisiones"
+    ],
+    "causas_probables": [
+      "Válvula EGR obstruida con carbón",
+      "Manguera de vacío desconectada del solenoide EGR",
+      "Conductos de EGR en el múltiple tapados"
+    ],
+    "soluciones": [
+      "Desmontar y limpiar válvula EGR y conductos",
+      "Verificar integridad de mangueras de vacío",
+      "Revisar solenoide de vacío de control EGR"
+    ]
+  },
+  {
+    "codigo": "P0401",
+    "descripcion": "Exhaust Gas Recirculation (EGR) Flow Insufficient",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "Cascabeleo audible del motor bajo carga",
+      "Motor más caliente de lo habitual",
+      "Check engine encendido",
+      "Sin síntomas graves de conducción"
+    ],
+    "causas_probables": [
+      "Conductos EGR completamente tapados con hollín (muy común en Ford)",
+      "Válvula EGR no abre (diafragma roto)",
+      "Sensor DPFE (presión diferencial) defectuoso"
+    ],
+    "soluciones": [
+      "Limpieza profunda de puertos EGR en el cuerpo de aceleración",
+      "Reemplazar sensor DPFE (común que falle por humedad)",
+      "Cambiar válvula EGR si no retiene vacío"
+    ]
+  },
+  {
+    "codigo": "P0402",
+    "descripcion": "Exhaust Gas Recirculation (EGR) Flow Excessive",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "El motor se apaga en ralentí (se ahoga con sus propios gases)",
+      "Ralentí muy inestable",
+      "Dificultad para arrancar",
+      "Pérdida de potencia en baja velocidad"
+    ],
+    "causas_probables": [
+      "Válvula EGR pegada en abierto por un pedazo de carbón",
+      "Solenoide de control en corto (dejando pasar vacío siempre)",
+      "Falla en sensor MAP (lectura errónea de vacío)"
+    ],
+    "soluciones": [
+      "Desmontar EGR y verificar si cierra herméticamente",
+      "Reemplazar válvula EGR si el resorte está vencido",
+      "Revisar que no haya vacío en la EGR en ralentí"
+    ]
+  },
+  {
+    "codigo": "P0403",
+    "descripcion": "Exhaust Gas Recirculation (EGR) Control Circuit",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "Luz MIL encendida",
+      "El sistema EGR se deshabilita",
+      "Posible cascabeleo",
+      "Sin síntomas graves de manejo"
+    ],
+    "causas_probables": [
+      "Problema eléctrico en la bobina del solenoide EGR",
+      "Cableado abierto o conector sulfatado",
+      "Computadora no envía señal de tierra"
+    ],
+    "soluciones": [
+      "Medir resistencia del solenoide EGR",
+      "Limpiar contactos eléctricos del conector",
+      "Reparar cableado cortado"
+    ]
+  },
+  {
+    "codigo": "P0410",
+    "descripcion": "Secondary Air Injection System Malfunction",
+    "system": "Emissions (AIR)",
+    "sintomas": [
+      "Ruido de aspiradora bajo el cofre al arrancar en frío",
+      "La bomba de aire no se escucha funcionar",
+      "Falla en emisiones en frío",
+      "Check engine encendido"
+    ],
+    "causas_probables": [
+      "Bomba de aire secundario dañada (mojada)",
+      "Agua acumulada en la bomba de aire",
+      "Válvula check de aire atascada o mangueras rotas"
+    ],
+    "soluciones": [
+      "Probar funcionamiento directo de la bomba de aire",
+      "Reemplazar válvulas check de una vía",
+      "Revisar fusibles y relevadores del sistema AIR"
+    ]
+  },
+  {
+    "codigo": "P0411",
+    "descripcion": "Secondary Air Injection System Incorrect Flow Detected",
+    "system": "Emissions (AIR)",
+    "sintomas": [
+      "La bomba de aire enciende pero el flujo no llega al escape",
+      "Ruido de escape fugando",
+      "Olor a gases de escape en el compartimiento del motor",
+      "Luz de servicio activa"
+    ],
+    "causas_probables": [
+      "Bomba de aire funciona pero no inyecta (aspas rotas)",
+      "Mangueras de aire rotas o desconectadas",
+      "Válvula solenoide de control de aire dañada"
+    ],
+    "soluciones": [
+      "Revisar fugas en mangueras de la bomba al escape",
+      "Limpiar puertos de inyección en la culata",
+      "Cambiar válvula de control de aire"
+    ]
+  },
+  {
+    "codigo": "P0420",
+    "descripcion": "Catalyst System Efficiency Below Threshold (Bank 1)",
+    "system": "Emissions (Catalyst)",
+    "sintomas": [
+      "Generalmente no hay síntomas de conducción",
+      "Olor a huevo podrido (azufre) por el escape",
+      "Si el catalizador está tapado: Falta de potencia severa",
+      "Falla la prueba de emisiones (verificación)"
+    ],
+    "causas_probables": [
+      "Convertidor catalítico degradado (vida útil terminada)",
+      "Sensor de oxígeno trasero fluctuando igual que el delantero",
+      "Fuga en escape antes del catalizador (entra aire falso)"
+    ],
+    "soluciones": [
+      "Usar espaciador de sensor O2 (solución temporal para apagar luz)",
+      "Reemplazar convertidor catalítico (única solución definitiva)",
+      "Reparar fugas de escape antes del sensor trasero"
+    ]
+  },
+  {
+    "codigo": "P0421",
+    "descripcion": "Warm Up Catalyst Efficiency Below Threshold (Bank 1)",
+    "system": "Emissions (Catalyst)",
+    "sintomas": [
+      "Luz de Check Engine encendida",
+      "Falla de emisiones en arranque en frío",
+      "Sin problemas de potencia usualmente"
+    ],
+    "causas_probables": [
+      "Pre-catalizador (pegado al motor) dañado",
+      "Falla en calentador de sensor O2 (tarda en medir)",
+      "Mala combustión previa que dañó el catalizador"
+    ],
+    "soluciones": [
+      "Verificar operación de sensores O2",
+      "Reemplazar pre-catalizador (manifold cat)",
+      "Corregir mezcla de combustible rica que daña el cat"
+    ]
+  },
+  {
+    "codigo": "P0430",
+    "descripcion": "Catalyst System Efficiency Below Threshold (Bank 2)",
+    "system": "Emissions (Catalyst)",
+    "sintomas": [
+      "Igual que P0420 pero en el Banco 2",
+      "Olor a azufre",
+      "Falla de verificación vehicular"
+    ],
+    "causas_probables": [
+      "Convertidor catalítico Banco 2 dañado",
+      "Fuga de escape lado Banco 2",
+      "Sensores de oxígeno envejecidos"
+    ],
+    "soluciones": [
+      "Verificar gráficas de sensores O2 (trasero debe ser línea recta)",
+      "Reemplazar catalizador Banco 2",
+      "Soldar fugas de escape"
+    ]
+  },
+  {
+    "codigo": "P0440",
+    "descripcion": "Evaporative Emission Control System Malfunction",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Olor a gasolina alrededor del auto",
+      "Luz Check Engine encendida",
+      "A veces cuesta llenar el tanque de gasolina (la pistola se bota)",
+      "Sin fallas de motor"
+    ],
+    "causas_probables": [
+      "Tapón de gasolina flojo, dañado o genérico",
+      "Fuga en tanque de combustible o cuello de llenado",
+      "Válvula de purga EVAP dañada"
+    ],
+    "soluciones": [
+      "Apretar o cambiar tapón de gasolina (siempre usar OEM)",
+      "Revisar mangueras del canister",
+      "Prueba de humo para fugas en el sistema"
+    ]
+  },
+  {
+    "codigo": "P0441",
+    "descripcion": "Evaporative Emission Control System Incorrect Purge Flow",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Ralentí inestable (si la válvula se queda abierta)",
+      "Dificultad para arrancar después de cargar gasolina",
+      "Olor a combustible",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Válvula de purga atascada (abierta o cerrada)",
+      "Líneas de vacío EVAP cruzadas, rotas o tapadas",
+      "Switch de vacío dañado"
+    ],
+    "soluciones": [
+      "Probar vacío en válvula de purga (no debe succionar sin corriente)",
+      "Reemplazar válvula de purga del canister",
+      "Verificar líneas rígidas de plástico"
+    ]
+  },
+  {
+    "codigo": "P0442",
+    "descripcion": "Evaporative Emission Control System Leak Detected (small leak)",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Olor a gasolina leve",
+      "Luz de Check Engine",
+      "No afecta el rendimiento del motor"
+    ],
+    "causas_probables": [
+      "Pequeña fisura en mangueras EVAP (por edad)",
+      "Sello del tapón de gasolina reseco o agrietado",
+      "Tanque de carbón activado (Canister) con grietas finas"
+    ],
+    "soluciones": [
+      "Aplicar vaselina al sello del tapón de gas y probar",
+      "Realizar prueba de humo para encontrar fugas diminutas",
+      "Revisar válvula de venteo (Vent Valve)"
+    ]
+  },
+  {
+    "codigo": "P0443",
+    "descripcion": "Evaporative Emission Control System Purge Control Valve Circuit",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "El sistema EVAP no purga los gases",
+      "Presión excesiva en el tanque de gasolina",
+      "Luz MIL encendida"
+    ],
+    "causas_probables": [
+      "Circuito eléctrico de la válvula de purga abierto",
+      "Solenoide de purga quemado internamente",
+      "Fusible dañado"
+    ],
+    "soluciones": [
+      "Medir resistencia de la válvula de purga",
+      "Verificar voltaje en el conector (con llave abierta)",
+      "Reemplazar válvula de purga"
+    ]
+  },
+  {
+    "codigo": "P0444",
+    "descripcion": "Evaporative Emission Control System Purge Control Valve Circuit Open",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Igual que P0443",
+      "Sistema de purga inoperante",
+      "Código fijo (hard fault)"
+    ],
+    "causas_probables": [
+      "Conector desconectado o cable cortado",
+      "Bobina de válvula abierta internamente (resistencia infinita)"
+    ],
+    "soluciones": [
+      "Conectar correctamente la válvula",
+      "Reparar arnés eléctrico buscando cortes",
+      "Cambiar válvula de purga"
+    ]
+  },
+  {
+    "codigo": "P0445",
+    "descripcion": "Evaporative Emission Control System Purge Control Valve Circuit Shorted",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Fusible de control de motor fundido (afecta otros sensores)",
+      "Posible olor a quemado eléctrico",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Corto circuito en cableado (cable a tierra)",
+      "Válvula en corto interno",
+      "Driver de ECU quemado por el corto"
+    ],
+    "soluciones": [
+      "Revisar cableado derretido sobre el motor",
+      "Medir resistencia (no debe ser 0 ohms)",
+      "Reemplazar válvula y revisar fusibles asociados"
+    ]
+  },
+  {
+    "codigo": "P0446",
+    "descripcion": "Evaporative Emission Control System Vent Control Circuit Malfunction",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Dificultad para llenar el tanque de gasolina (la pistola se dispara a cada rato)",
+      "Olor a combustible cerca de la llanta trasera o tanque",
+      "Luz de Check Engine encendida",
+      "Sin problemas de rendimiento del motor"
+    ],
+    "causas_probables": [
+      "Válvula de ventilación (Vent Valve) bloqueada o cerrada permanentemente",
+      "Filtro del canister saturado de polvo o tierra",
+      "Cableado de la válvula cortado o conector sulfatado"
+    ],
+    "soluciones": [
+      "Reemplazar válvula de ventilación (generalmente ubicada cerca del tanque)",
+      "Limpiar o cambiar filtro del canister (charcoal canister)",
+      "Verificar alimentación de 12V a la válvula"
+    ]
+  },
+  {
+    "codigo": "P0455",
+    "descripcion": "Evaporative Emission Control System Leak Detected (Gross Leak)",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Olor fuerte a gasolina",
+      "Tapón de gasolina flojo al inspeccionarlo",
+      "Luz MIL encendida poco después de cargar combustible",
+      "A veces se escucha un silbido al abrir el tanque"
+    ],
+    "causas_probables": [
+      "Tapón de gasolina suelto, sin sello de goma o genérico",
+      "Válvula de purga se quedó abierta (succionando siempre)",
+      "Manguera del canister rota o desconectada"
+    ],
+    "soluciones": [
+      "Apretar o cambiar tapón de gasolina por uno original",
+      "Revisar mangueras de EVAP visualmente",
+      "Prueba de humo para encontrar la fuga grande"
+    ]
+  },
+  {
+    "codigo": "P0460",
+    "descripcion": "Fuel Level Sensor Circuit Malfunction",
+    "system": "Instrument Cluster / Fuel System",
+    "sintomas": [
+      "La aguja de gasolina marca vacío aunque el tanque esté lleno",
+      "La aguja fluctúa o se mueve erráticamente",
+      "Luz de reserva de combustible encendida falsamente",
+      "El auto funciona bien, solo falla el indicador"
+    ],
+    "causas_probables": [
+      "Flotador de combustible atascado dentro del tanque",
+      "Pista del sensor de nivel desgastada (resistencia variable dañada)",
+      "Problema en el tablero de instrumentos o cableado"
+    ],
+    "soluciones": [
+      "Revisar conexión eléctrica sobre el tanque",
+      "Cambiar unidad del flotador (a veces viene con la bomba)",
+      "Verificar tierra del circuito"
+    ]
+  },
+  {
+    "codigo": "P0463",
+    "descripcion": "Fuel Level Sensor Circuit High Input",
+    "system": "Instrument Cluster / Fuel System",
+    "sintomas": [
+      "Indicador de gasolina pegado en 'F' (Lleno) todo el tiempo",
+      "Luz de Check Engine",
+      "Cálculo de 'Kilómetros por recorrer' (DTE) erróneo"
+    ],
+    "causas_probables": [
+      "Circuito abierto en el sensor (flotador)",
+      "Conector desconectado en la bomba de gasolina",
+      "Tierra del sensor cortada"
+    ],
+    "soluciones": [
+      "Verificar continuidad del cableado",
+      "Limpiar sulfato en conector de bomba",
+      "Reemplazar sensor de nivel"
+    ]
+  },
+  {
+    "codigo": "P0470",
+    "descripcion": "Exhaust Pressure Sensor Malfunction",
+    "system": "Exhaust / Emissions",
+    "sintomas": [
+      "Falta de potencia en motores Turbo/Diesel",
+      "Regeneración del DPF fallida o frecuente",
+      "Lecturas erráticas de presión de escape",
+      "Luz de Check Engine"
+    ],
+    "causas_probables": [
+      "Sensor de contrapresión de escape (EBP) dañado",
+      "Tubo del sensor tapado con hollín (muy común)",
+      "Cableado dañado por calor del escape"
+    ],
+    "soluciones": [
+      "Limpiar tubo de conexión al escape con un alambre",
+      "Verificar voltaje de referencia",
+      "Reemplazar sensor EBP"
+    ]
+  },
+  {
+    "codigo": "P0480",
+    "descripcion": "Cooling Fan 1 Control Circuit Malfunction",
+    "system": "Cooling System",
+    "sintomas": [
+      "El motor se calienta en tráfico o semáforos",
+      "El ventilador del radiador no enciende",
+      "El aire acondicionado no enfría bien cuando el auto está detenido",
+      "Temperatura sube rápidamente"
+    ],
+    "causas_probables": [
+      "Relevador del ventilador 1 dañado",
+      "Fusible del ventilador fundido",
+      "Motor del ventilador quemado"
+    ],
+    "soluciones": [
+      "Probar motor del ventilador directo a batería",
+      "Intercambiar relevadores (Fan Relay)",
+      "Revisar arnés y conector del ventilador"
+    ]
+  },
+  {
+    "codigo": "P0500",
+    "descripcion": "Vehicle Speed Sensor (VSS) Malfunction",
+    "system": "Transmission / Speedometer",
+    "sintomas": [
+      "El velocímetro no funciona o marca 0",
+      "La transmisión automática no cambia de velocidad o golpea",
+      "Control crucero no funciona",
+      "Frenos ABS pueden desactivarse"
+    ],
+    "causas_probables": [
+      "Sensor de velocidad dañado",
+      "Engranaje del sensor (piñón de plástico) roto",
+      "Cableado cortado o derretido"
+    ],
+    "soluciones": [
+      "Inspeccionar engrane de plástico del sensor",
+      "Verificar señal con multímetro/osciloscopio",
+      "Reemplazar sensor VSS"
+    ]
+  },
+  {
+    "codigo": "P0505",
+    "descripcion": "Idle Control System Malfunction",
+    "system": "Air Intake / Idle",
+    "sintomas": [
+      "El motor se apaga al soltar el acelerador",
+      "Ralentí muy bajo o inestable",
+      "El motor se acelera solo y luego baja",
+      "Dificultad para mantener el motor encendido en frío"
+    ],
+    "causas_probables": [
+      "Válvula IAC sucia o atascada con carbón",
+      "Fuga de vacío grande",
+      "Cuerpo de aceleración sucio"
+    ],
+    "soluciones": [
+      "Limpiar válvula IAC y cuerpo de aceleración",
+      "Realizar aprendizaje de marcha mínima",
+      "Buscar fugas de aire en admisión"
+    ]
+  },
+  {
+    "codigo": "P0507",
+    "descripcion": "Idle Control System RPM Higher Than Expected",
+    "system": "Air Intake / Idle",
+    "sintomas": [
+      "El motor se queda muy acelerado en P o N",
+      "El auto avanza solo muy rápido al soltar el freno (en Drive)",
+      "Golpe al meter velocidad (D o R) por altas RPM",
+      "Ruido de succión de aire"
+    ],
+    "causas_probables": [
+      "Fuga de vacío (manguera rota, PCV)",
+      "Válvula IAC pegada abierta",
+      "Válvula PCV fallando (dejando pasar mucho aire)"
+    ],
+    "soluciones": [
+      "Prueba de humo para fugas de vacío",
+      "Reemplazar válvula PCV",
+      "Limpiar o cambiar IAC"
+    ]
+  },
+  {
+    "codigo": "P0520",
+    "descripcion": "Engine Oil Pressure Sensor/Switch Circuit Malfunction",
+    "system": "Engine Mechanical / Sensors",
+    "sintomas": [
+      "Indicador de presión de aceite marca 0 o máximo",
+      "Luz de aceite parpadea o se queda encendida",
+      "Posible ruido de motor si la presión es realmente baja",
+      "Check engine encendido"
+    ],
+    "causas_probables": [
+      "Sensor de presión de aceite dañado",
+      "Cableado en corto o abierto",
+      "Baja presión de aceite real (bomba dañada o motor desgastado)"
+    ],
+    "soluciones": [
+      "Verificar nivel de aceite",
+      "Medir presión con manómetro mecánico para descartar daño interno",
+      "Reemplazar sensor de presión"
+    ]
+  },
+  {
+    "codigo": "P0530",
+    "descripcion": "A/C Refrigerant Pressure Sensor Circuit Malfunction",
+    "system": "HVAC (Air Conditioning)",
+    "sintomas": [
+      "El aire acondicionado no enfría",
+      "El compresor de A/C no entra (clutch no activa)",
+      "El ventilador del radiador se queda prendido siempre (modo protección)",
+      "Lectura errónea de presión de gas en escáner"
+    ],
+    "causas_probables": [
+      "Sensor de presión de A/C dañado",
+      "Sistema vacío (sin gas refrigerante)",
+      "Conector del sensor dañado o desconectado"
+    ],
+    "soluciones": [
+      "Verificar carga de gas refrigerante con manómetros",
+      "Revisar arnés del sensor",
+      "Reemplazar transductor de presión"
+    ]
+  },
+  {
+    "codigo": "P0550",
+    "descripcion": "Power Steering Pressure Sensor Circuit Malfunction",
+    "system": "Steering / Engine Load",
+    "sintomas": [
+      "El motor se apaga al girar el volante a tope (estacionándose)",
+      "Ralentí inestable al mover la dirección",
+      "Dirección dura o ruidosa",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Sensor de presión de dirección hidráulica dañado",
+      "Cableado cortado",
+      "Bomba de dirección fallando"
+    ],
+    "soluciones": [
+      "Revisar si el sensor tira aceite",
+      "Verificar cambio de RPM al girar volante",
+      "Reemplazar sensor PSP"
+    ]
+  },
+  {
+    "codigo": "P0560",
+    "descripcion": "System Voltage Malfunction",
+    "system": "Electrical / Charging",
+    "sintomas": [
+      "Luces tenues o parpadeantes",
+      "El radio se apaga solo",
+      "El motor falla o se apaga",
+      "Arranque lento o pesado"
+    ],
+    "causas_probables": [
+      "Batería en mal estado (no retiene carga)",
+      "Alternador fallando (no carga o sobrecarga)",
+      "Cables de batería flojos, sucios o sulfatados"
+    ],
+    "soluciones": [
+      "Limpiar bornes de batería",
+      "Prueba de carga del sistema (batería y alternador)",
+      "Revisar tierras del chasis"
+    ]
+  },
+  {
+    "codigo": "P0562",
+    "descripcion": "System Voltage Low",
+    "system": "Electrical / Charging",
+    "sintomas": [
+      "Luz de batería encendida en tablero",
+      "El auto se muere mientras conduces",
+      "Sistemas eléctricos dejan de funcionar (ABS, Airbag)",
+      "Transmisión entra en modo de seguridad"
+    ],
+    "causas_probables": [
+      "Alternador no carga (diodos o regulador dañados)",
+      "Batería descargada o vieja",
+      "Resistencia alta en cables (corrosión)"
+    ],
+    "soluciones": [
+      "Reemplazar alternador",
+      "Cargar o cambiar batería",
+      "Revisar caída de voltaje en cables principales"
+    ]
+  },
+  {
+    "codigo": "P0563",
+    "descripcion": "System Voltage High",
+    "system": "Electrical / Charging",
+    "sintomas": [
+      "Luces extremadamente brillantes y luego se funden",
+      "Olor a ácido de batería (batería hirviendo)",
+      "Daño a módulos electrónicos",
+      "Comportamiento errático del tablero"
+    ],
+    "causas_probables": [
+      "Regulador de voltaje del alternador dañado (pico de voltaje)",
+      "Pico de voltaje por batería desconectada con motor andando",
+      "Falla en PCM (controlador de carga)"
+    ],
+    "soluciones": [
+      "Reemplazar regulador o alternador completo",
+      "Verificar conexiones de batería",
+      "Revisar voltajes de referencia"
+    ]
+  },
+  {
+    "codigo": "P0571",
+    "descripcion": "Cruise Control/Brake Switch A Circuit Malfunction",
+    "system": "Electrical / Safety",
+    "sintomas": [
+      "Control crucero no se activa",
+      "Luces de freno no encienden o se quedan pegadas",
+      "No se puede sacar la palanca de Park (P)",
+      "El motor arranca sin pisar el freno (peligroso)"
+    ],
+    "causas_probables": [
+      "Interruptor de luz de freno dañado o desajustado",
+      "Fusible de luces de freno quemado",
+      "Focos de freno fundidos (en algunos autos cancela el crucero)"
+    ],
+    "soluciones": [
+      "Cambiar interruptor del pedal de freno",
+      "Revisar focos traseros",
+      "Ajustar posición del switch en el pedal"
+    ]
+  },
+  {
+    "codigo": "P0601",
+    "descripcion": "Internal Control Module Memory Check Sum Error",
+    "system": "Computer / ECU",
+    "sintomas": [
+      "Luz Check Engine encendida permanentemente",
+      "El motor puede no arrancar",
+      "Fallas aleatorias de varios sistemas",
+      "Posiblemente ningún síntoma de conducción, pero código fatal"
+    ],
+    "causas_probables": [
+      "Falla interna del PCM/ECU (Memoria corrupta)",
+      "Problema de soldadura en memoria",
+      "Bajo voltaje durante programación o 'Flash'"
+    ],
+    "soluciones": [
+      "Intentar reprogramar (Flash) la ECU",
+      "Reemplazar la computadora del motor (PCM)",
+      "Verificar tierras de la ECU antes de cambiarla"
+    ]
+  },
+  {
+    "codigo": "P0603",
+    "descripcion": "Internal Control Module Keep Alive Memory (KAM) Error",
+    "system": "Computer / ECU",
+    "sintomas": [
+      "El motor se siente diferente (perdió el aprendizaje)",
+      "Ralentí inestable tras desconectar batería",
+      "Cambios de transmisión bruscos (reseteo de adaptativos)",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Batería desconectada recientemente",
+      "Terminales de batería sucias",
+      "Falla en memoria KAM del PCM (no guarda datos al apagar)"
+    ],
+    "soluciones": [
+      "Manejar el auto para reaprendizaje (Drive Cycle)",
+      "Limpiar bornes de batería",
+      "Si persiste y falla el auto, reemplazar PCM"
+    ]
+  },
+  {
+    "codigo": "P0606",
+    "descripcion": "ECM/PCM Processor Fault",
+    "system": "Computer / ECU",
+    "sintomas": [
+      "El motor se apaga y no vuelve a prender",
+      "No hay comunicación con el escáner",
+      "El auto actúa 'loco' (ventiladores prenden, luces parpadean)",
+      "Modo de seguridad activado"
+    ],
+    "causas_probables": [
+      "Falla catastrófica del procesador de la ECU",
+      "Corto circuito interno",
+      "Sobrecalentamiento de la ECU"
+    ],
+    "soluciones": [
+      "Revisar sistema de carga (alternador dañando la ECU)",
+      "Reemplazar PCM/ECU"
+    ]
+  },
+  {
+    "codigo": "P0620",
+    "descripcion": "Generator Control Circuit Malfunction",
+    "system": "Electrical / Charging",
+    "sintomas": [
+      "Luz de batería encendida",
+      "Alternador no carga o carga en exceso",
+      "El motor se apaga por falta de energía"
+    ],
+    "causas_probables": [
+      "Problema en regulador del alternador",
+      "Cable de control de campo abierto (señal de la ECU)",
+      "Batería defectuosa"
+    ],
+    "soluciones": [
+      "Verificar arnés del alternador (conector pequeño)",
+      "Probar salida del alternador",
+      "Reemplazar alternador"
+    ]
+  },
+  {
+    "codigo": "P0700",
+    "descripcion": "Transmission Control System (MIL Request)",
+    "system": "Transmission",
+    "sintomas": [
+      "Luz Check Engine encendida",
+      "La transmisión falla, golpea o patina",
+      "El auto se siente pesado al arrancar (arranca en 2da o 3ra)",
+      "Solo indica que hay OTRO código en el módulo de transmisión"
+    ],
+    "causas_probables": [
+      "Falla almacenada en el módulo de transmisión (TCM)",
+      "Problema de comunicación TCM-PCM"
+    ],
+    "soluciones": [
+      "Escanear específicamente el módulo de transmisión (TCM)",
+      "Este código es solo un aviso, no la falla en sí",
+      "Revisar conectores de transmisión"
+    ]
+  },
+  {
+    "codigo": "P0703",
+    "descripcion": "Torque Converter/Brake Switch B Circuit Malfunction",
+    "system": "Transmission / Torque Converter",
+    "sintomas": [
+      "El convertidor de par no se bloquea (mayor consumo en carretera)",
+      "El convertidor no se desbloquea al frenar (el auto se jalonea al parar)",
+      "Luces de freno fallan",
+      "Control crucero no funciona"
+    ],
+    "causas_probables": [
+      "Interruptor de freno mal ajustado o dañado",
+      "Cableado abierto",
+      "Solenoide de bloqueo TCC fallando"
+    ],
+    "soluciones": [
+      "Ajustar switch de freno",
+      "Verificar operación de luces de freno",
+      "Revisar circuito del TCC"
+    ]
+  },
+  {
+    "codigo": "P0705",
+    "descripcion": "Transmission Range Sensor Circuit Malfunction (PRNDL Input)",
+    "system": "Transmission",
+    "sintomas": [
+      "El auto no arranca en Park o Neutral",
+      "Las luces de reversa no encienden",
+      "El indicador de marcha en el tablero no coincide o parpadea",
+      "La transmisión entra en modo de emergencia"
+    ],
+    "causas_probables": [
+      "Sensor de rango (TR) sucio, lleno de agua o desajustado",
+      "Cable de la palanca de cambios flojo",
+      "Conector con corrosión"
+    ],
+    "soluciones": [
+      "Ajustar chicote de la palanca",
+      "Limpiar o reemplazar sensor TR (Switch neutral)",
+      "Verificar alineación de marchas en tablero"
+    ]
+  },
+  {
+    "codigo": "P0706",
+    "descripcion": "Transmission Range Sensor Circuit Range/Performance",
+    "system": "Transmission",
+    "sintomas": [
+      "Cambios de marcha erráticos",
+      "Posible arranque en cualquier velocidad (peligroso)",
+      "Indicador PRNDL loco",
+      "Modo Limp Home"
+    ],
+    "causas_probables": [
+      "Sensor de rango enviando señales ilógicas",
+      "Desgaste interno del sensor",
+      "Corto intermitente por humedad"
+    ],
+    "soluciones": [
+      "Reemplazar sensor de rango de transmisión",
+      "Revisar arnés por daños físicos"
+    ]
+  },
+  {
+    "codigo": "P0707",
+    "descripcion": "Transmission Range Sensor Circuit Low Input",
+    "system": "Transmission",
+    "sintomas": [
+      "La transmisión se queda en una sola marcha",
+      "No arranca en P o N",
+      "Indicador de marcha apagado"
+    ],
+    "causas_probables": [
+      "Sensor de rango (TR) en corto a tierra",
+      "Sensor TR defectuoso",
+      "Cableado cortado"
+    ],
+    "soluciones": [
+      "Verificar ajuste del sensor en la caja",
+      "Revisar continuidad del cableado",
+      "Reemplazar sensor TR"
+    ]
+  },
+  {
+    "codigo": "P0708",
+    "descripcion": "Transmission Range Sensor Circuit High Input",
+    "system": "Transmission",
+    "sintomas": [
+      "Arranque intermitente",
+      "Problemas con luces de reversa",
+      "Falla de cambios"
+    ],
+    "causas_probables": [
+      "Sensor de rango desconectado",
+      "Circuito abierto",
+      "Sensor dañado internamente"
+    ],
+    "soluciones": [
+      "Conectar bien el arnés",
+      "Medir voltaje de señal",
+      "Cambiar sensor de rango"
+    ]
+  },
+  {
+    "codigo": "P0715",
+    "descripcion": "Input/Turbine Speed Sensor Circuit Malfunction",
+    "system": "Transmission",
+    "sintomas": [
+      "Cambios de velocidad muy bruscos o golpeados",
+      "La transmisión no cambia de 1ra o 2da",
+      "Velocímetro funciona pero la caja falla",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Sensor de velocidad de entrada (ISS) dañado",
+      "Viruta metálica en la punta del sensor (imán)",
+      "Cableado dañado"
+    ],
+    "soluciones": [
+      "Limpiar sensor de virutas",
+      "Medir resistencia del sensor",
+      "Reemplazar sensor ISS"
+    ]
+  },
+  {
+    "codigo": "P0719",
+    "descripcion": "Torque Converter/Brake Switch B Circuit Low",
+    "system": "Transmission / Torque Converter",
+    "sintomas": [
+      "El convertidor de par no engancha (RPM altas en carretera)",
+      "El motor se siente suelto al soltar el acelerador",
+      "Control crucero inoperativo"
+    ],
+    "causas_probables": [
+      "Interruptor de freno pegado (siempre marcando frenado)",
+      "Cable de señal en corto a tierra",
+      "Falla en el módulo de carrocería (BCM)"
+    ],
+    "soluciones": [
+      "Revisar interruptor en el pedal de freno",
+      "Verificar luces de stop",
+      "Reparar cableado"
+    ]
+  },
+  {
+    "codigo": "P0720",
+    "descripcion": "Output Speed Sensor Circuit Malfunction",
+    "system": "Transmission",
+    "sintomas": [
+      "Velocímetro muerto o errático",
+      "Cambios de transmisión a destiempo o no cambia",
+      "El auto se siente frenado o pesado",
+      "Fallas en ABS"
+    ],
+    "causas_probables": [
+      "Sensor de velocidad de salida (OSS) dañado",
+      "Conector quemado por el escape",
+      "Falla en diferencial o engrane del sensor"
+    ],
+    "soluciones": [
+      "Revisar conector y cables",
+      "Reemplazar sensor OSS",
+      "Verificar estado del fluido de transmisión"
+    ]
+  },
+  {
+    "codigo": "P0724",
+    "descripcion": "Torque Converter/Brake Switch B Circuit High",
+    "system": "Transmission / Torque Converter",
+    "sintomas": [
+      "El convertidor se queda bloqueado (el auto se jalonea al frenar)",
+      "El motor se apaga al llegar a un semáforo (como no pisar clutch en manual)",
+      "Luces de freno siempre encendidas"
+    ],
+    "causas_probables": [
+      "Interruptor de freno siempre activo (circuito abierto)",
+      "Cable de señal en corto a voltaje",
+      "Falla en ajuste del pedal"
+    ],
+    "soluciones": [
+      "Ajustar posición del switch de freno",
+      "Cambiar switch de freno",
+      "Verificar retorno del pedal"
+    ]
+  },
+  {
+    "codigo": "P0730",
+    "descripcion": "Incorrect Gear Ratio",
+    "system": "Transmission",
+    "sintomas": [
+      "La transmisión patina (revoluciones suben pero el auto no acelera)",
+      "El auto no se mueve en ninguna velocidad",
+      "Olor a aceite quemado",
+      "Ruido de zumbido o molienda"
+    ],
+    "causas_probables": [
+      "Nivel bajo de aceite de transmisión",
+      "Aceite muy sucio/quemado",
+      "Desgaste interno grave (discos/bandas/convertidor)"
+    ],
+    "soluciones": [
+      "Rellenar nivel de ATF",
+      "Cambiar aceite y filtro",
+      "Reparación mayor de transmisión"
+    ]
+  },
+  {
+    "codigo": "P0731",
+    "descripcion": "Gear 1 Incorrect Ratio",
+    "system": "Transmission",
+    "sintomas": [
+      "El auto patina al arrancar",
+      "No tiene fuerza en salida",
+      "Arranca en 2da o 3ra velocidad",
+      "RPM altas para la velocidad a la que va"
+    ],
+    "causas_probables": [
+      "Solenoides de cambio A o B fallando",
+      "Embragues de 1ra velocidad desgastados",
+      "Cuerpo de válvulas sucio o con válvulas pegadas"
+    ],
+    "soluciones": [
+      "Probar solenoides de cambio",
+      "Limpiar cuerpo de válvulas",
+      "Reconstrucción de transmisión"
+    ]
+  },
+  {
+    "codigo": "P0740",
+    "descripcion": "Torque Converter Clutch (TCC) Circuit Malfunction",
+    "system": "Transmission",
+    "sintomas": [
+      "Mayor consumo de combustible en carretera",
+      "El motor se revoluciona más de lo normal a alta velocidad",
+      "La transmisión se calienta en viajes largos",
+      "Posible vibración tipo 'lavadora' al intentar enganchar el convertidor"
+    ],
+    "causas_probables": [
+      "Solenoide TCC dañado (bobina abierta)",
+      "Convertidor de par dañado (balata interna gastada)",
+      "Paso de aceite obstruido en el cuerpo de válvulas"
+    ],
+    "soluciones": [
+      "Reemplazar solenoide TCC (accesible al quitar el cárter)",
+      "Reemplazar convertidor de par (requiere bajar la transmisión)",
+      "Cambiar fluido de transmisión y filtro"
+    ]
+  },
+  {
+    "codigo": "P0741",
+    "descripcion": "Torque Converter Clutch Circuit Performance or Stuck Off",
+    "system": "Transmission",
+    "sintomas": [
+      "El convertidor nunca se bloquea (no hay 'Lock-up')",
+      "Sobrecalentamiento de la transmisión",
+      "Luz Check Engine encendida",
+      "El auto se siente 'suelto' al soltar el acelerador en autopista"
+    ],
+    "causas_probables": [
+      "Solenoide TCC atascado mecánicamente en cerrado",
+      "Sello del pistón del convertidor dañado (fuga interna)",
+      "Baja presión hidráulica por bomba desgastada"
+    ],
+    "soluciones": [
+      "Cambiar solenoide TCC",
+      "Verificar presión de línea hidráulica",
+      "Reparar cuerpo de válvulas (instalar kit de corrección)"
+    ]
+  },
+  {
+    "codigo": "P0743",
+    "descripcion": "Torque Converter Clutch Circuit Electrical",
+    "system": "Transmission",
+    "sintomas": [
+      "Luz de falla de transmisión (O/D Off parpadeando o engrane)",
+      "El vehículo puede apagarse al detenerse (si se quedó pegado en ON)",
+      "Golpes fuertes al cambiar de marcha"
+    ],
+    "causas_probables": [
+      "Bobina del solenoide TCC abierta o en corto",
+      "Cableado del arnés interno dañado o pelado",
+      "Falla en PCM/TCM (driver quemado)"
+    ],
+    "soluciones": [
+      "Medir resistencia del solenoide (Ohms)",
+      "Reemplazar arnés interno de la caja (común que se tueste por calor)",
+      "Cambiar solenoide"
+    ]
+  },
+  {
+    "codigo": "P0745",
+    "descripcion": "Pressure Control Solenoid 'A' Malfunction (EPC)",
+    "system": "Transmission",
+    "sintomas": [
+      "Cambios de velocidad extremadamente bruscos (golpeteo)",
+      "Cambios muy suaves o patinando (slipping)",
+      "La transmisión entra en modo de seguridad (solo una marcha)",
+      "Retraso al aplicar Drive o Reversa"
+    ],
+    "causas_probables": [
+      "Solenoide de presión de línea (EPC) sucio o atascado",
+      "Falla eléctrica en la bobina del solenoide",
+      "Bomba de aceite con baja presión"
+    ],
+    "soluciones": [
+      "Reemplazar solenoide EPC (Electronic Pressure Control)",
+      "Verificar presión con manómetro en puerto de prueba",
+      "Revisar cableado externo hacia la caja"
+    ]
+  },
+  {
+    "codigo": "P0750",
+    "descripcion": "Shift Solenoid 'A' Malfunction",
+    "system": "Transmission",
+    "sintomas": [
+      "La transmisión no cambia de 1ra a 2da (o salta cambios)",
+      "Arranca en una marcha equivocada (ej. 3ra)",
+      "Luz de servicio encendida",
+      "Consumo alto de combustible"
+    ],
+    "causas_probables": [
+      "Solenoide de cambio A atascado o sucio con rebaba",
+      "Falla mecánica en válvula de cambio A",
+      "Canales del cuerpo de válvulas tapados con lodo"
+    ],
+    "soluciones": [
+      "Limpiar o cambiar solenoide A",
+      "Servicio de fluido y filtro (lavado interno)",
+      "Revisar resortes de válvulas en el cuerpo de válvulas"
+    ]
+  },
+  {
+    "codigo": "P0753",
+    "descripcion": "Shift Solenoid 'A' Electrical",
+    "system": "Transmission",
+    "sintomas": [
+      "La computadora detecta circuito abierto o corto",
+      "Modo de seguridad activado (Limp Mode)",
+      "Cambios erráticos",
+      "Falla eléctrica dura (Hard Fault)"
+    ],
+    "causas_probables": [
+      "Circuito abierto en la bobina del solenoide A",
+      "Cableado interno de la transmisión roto",
+      "Conector de la caja sulfatado o con pines doblados"
+    ],
+    "soluciones": [
+      "Medir continuidad de cables desde la PCM hasta la caja",
+      "Reemplazar solenoide A",
+      "Reparar arnés o limpiar conectores"
+    ]
+  },
+  {
+    "codigo": "P0755",
+    "descripcion": "Shift Solenoid 'B' Malfunction",
+    "system": "Transmission",
+    "sintomas": [
+      "No hay 2da o 3ra marcha (dependiendo del diseño de la caja)",
+      "El motor se revoluciona sin que el auto acelere (neutraliza)",
+      "Golpes al cambiar"
+    ],
+    "causas_probables": [
+      "Solenoide de cambio B atascado mecánicamente",
+      "Basura metálica en el solenoide",
+      "Falla hidráulica en el circuito B"
+    ],
+    "soluciones": [
+      "Intercambiar solenoide B (si es igual al A) para probar",
+      "Reemplazar solenoide B",
+      "Limpieza profunda de cuerpo de válvulas"
+    ]
+  },
+  {
+    "codigo": "P0758",
+    "descripcion": "Shift Solenoid 'B' Electrical",
+    "system": "Transmission",
+    "sintomas": [
+      "Igual que P0753 pero afectando otras marchas",
+      "Luz de advertencia de transmisión parpadeando",
+      "Solenoide no hace 'clic' al activarlo con escáner"
+    ],
+    "causas_probables": [
+      "Falla eléctrica en bobina del solenoide B",
+      "Cable de señal cortado o a tierra",
+      "PCM dañado (driver de salida quemado)"
+    ],
+    "soluciones": [
+      "Verificar resistencia eléctrica (comparar con manual)",
+      "Revisar fusibles de transmisión",
+      "Cambiar solenoide B"
+    ]
+  },
+  {
+    "codigo": "P0785",
+    "descripcion": "Shift/Timing Solenoid Malfunction (GM 3-2 Solenoid)",
+    "system": "Transmission",
+    "sintomas": [
+      "Falla en el cambio descendente de 3ra a 2da (tarda o golpea)",
+      "Transmisión se siente confundida al acelerar para rebasar",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Solenoide de 3-2 (GM 4L60E) dañado o atascado",
+      "Atascamiento mecánico de la válvula de tiempo",
+      "Cableado interno defectuoso"
+    ],
+    "soluciones": [
+      "Reemplazar solenoide de tiempo (Timing Solenoid)",
+      "Revisar arnés interno",
+      "Cambio de aceite y filtro"
+    ]
+  },
+  {
+    "codigo": "P0801",
+    "descripcion": "Reverse Inhibit Control Circuit Malfunction",
+    "system": "Transmission (Manual)",
+    "sintomas": [
+      "Se puede meter Reversa mientras el auto avanza hacia adelante (peligroso)",
+      "Difícil meter Reversa cuando el auto está detenido",
+      "Ruido de engranajes (rasquido) al intentar meter reversa"
+    ],
+    "causas_probables": [
+      "Solenoide de inhibición de reversa dañado",
+      "Palanca de cambios forzada o mecanismo roto",
+      "Problema de cableado al solenoide"
+    ],
+    "soluciones": [
+      "Probar solenoide de bloqueo de reversa (Reverse Lockout)",
+      "Verificar selector de cambios",
+      "Reemplazar solenoide"
+    ]
+  },
+  {
+    "codigo": "P0803",
+    "descripcion": "1-4 Upshift (Skip Shift) Solenoid Control Circuit",
+    "system": "Transmission (Manual - GM/Ford)",
+    "sintomas": [
+      "La palanca te obliga a pasar de 1ra a 4ta (sistema de economía)",
+      "No puedes meter 2da o 3ra a bajas revoluciones",
+      "Luz de 'Skip Shift' encendida o apagada incorrectamente"
+    ],
+    "causas_probables": [
+      "Solenoide CAGS (Computer Aided Gear Selection) dañado",
+      "Fusible quemado",
+      "Cableado desconectado (común si alguien intentó desactivarlo)"
+    ],
+    "soluciones": [
+      "Instalar eliminador de CAGS (modificación común para anularlo)",
+      "Reemplazar solenoide si se desea mantener original",
+      "Verificar fusibles"
+    ]
+  },
+  {
+    "codigo": "P1100",
+    "descripcion": "MAF Sensor Intermittent",
+    "system": "Air Intake System",
+    "sintomas": [
+      "Falla intermitente: el auto funciona bien y de repente falla",
+      "El motor se apaga al pasar un bache",
+      "Jaloneos esporádicos",
+      "Luz Check Engine prende y apaga sola"
+    ],
+    "causas_probables": [
+      "Conector del sensor MAF flojo o pines abiertos",
+      "Cableado intermitente (falso contacto)",
+      "Sensor MAF sucio o con soldadura fría interna"
+    ],
+    "soluciones": [
+      "Ajustar pines del conector (cerrarlos un poco para mejor contacto)",
+      "Limpiar sensor MAF",
+      "Revisar vibración excesiva en la caja del filtro de aire"
+    ]
+  },
+  {
+    "codigo": "P1101",
+    "descripcion": "MAF Sensor Out Of Self Test Range",
+    "system": "Air Intake System",
+    "sintomas": [
+      "El sensor MAF reporta valores imposibles a la computadora",
+      "Motor en modo de seguridad",
+      "Humo negro o falta de potencia",
+      "Lectura fija del MAF en el escáner"
+    ],
+    "causas_probables": [
+      "Sensor MAF fuera de calibración o dañado",
+      "Fugas de aire importantes después del MAF",
+      "Filtro de aire no original causando turbulencia (filtros cónicos mal instalados)"
+    ],
+    "soluciones": [
+      "Reemplazar sensor MAF",
+      "Verificar sistema de admisión por fugas",
+      "Usar filtro de aire OEM o corregir instalación de filtro de alto flujo"
+    ]
+  },
+  {
+    "codigo": "P1111",
+    "descripcion": "System Pass (Ford) / Intake Air Temperature (IAT) Circuit High (GM)",
+    "system": "General / Air Intake",
+    "sintomas": [
+      "Ford: Ninguno, significa que el sistema está OK (No es falla)",
+      "GM: El motor ajusta mal la mezcla por temperatura falsa (-40°C)",
+      "GM: Consumo alto en clima cálido"
+    ],
+    "causas_probables": [
+      "Ford: No hay fallas presentes (Código normal de fin de prueba)",
+      "GM: Sensor IAT desconectado o circuito abierto"
+    ],
+    "soluciones": [
+      "Si es Ford: Todo está bien, no hacer nada",
+      "Si es GM: Conectar sensor IAT o reemplazarlo si está abierto"
+    ]
+  },
+  {
+    "codigo": "P1112",
+    "descripcion": "Intake Air Temperature (IAT) Sensor Circuit Intermittent",
+    "system": "Air Intake System",
+    "sintomas": [
+      "La temperatura de admisión salta en el escáner (ej. de 20°C a -40°C)",
+      "Ralentí varía levemente",
+      "Luz MIL intermitente"
+    ],
+    "causas_probables": [
+      "Falso contacto en conector IAT (muy común)",
+      "Cable roto internamente (se conecta y desconecta con vibración)",
+      "Sensor fallando por temperatura interna"
+    ],
+    "soluciones": [
+      "Mover cables mientras se monitorea escáner (Wiggle test)",
+      "Limpiar conector y pines",
+      "Cambiar sensor IAT"
+    ]
+  },
+  {
+    "codigo": "P1116",
+    "descripcion": "Engine Coolant Temperature (ECT) Sensor Out of Range",
+    "system": "Cooling System",
+    "sintomas": [
+      "El ventilador enciende a destiempo",
+      "Lectura de temperatura en tablero no coincide con realidad",
+      "Dificultad de arranque en caliente",
+      "Mezcla de combustible incorrecta"
+    ],
+    "causas_probables": [
+      "Sensor de temperatura descalibrado (resistencia alterada)",
+      "Motor no alcanzó temperatura de operación durante autodiagnóstico",
+      "Termostato abierto (motor muy frío)"
+    ],
+    "soluciones": [
+      "Verificar temperatura real con termómetro láser y comparar",
+      "Cambiar sensor ECT",
+      "Reemplazar termostato"
+    ]
+  },
+  {
+    "codigo": "P1117",
+    "descripcion": "Engine Coolant Temperature (ECT) Sensor Intermittent",
+    "system": "Cooling System",
+    "sintomas": [
+      "La aguja de temperatura sube y baja de golpe",
+      "El motor se acelera y desacelera solo",
+      "Luz Check Engine"
+    ],
+    "causas_probables": [
+      "Falso contacto en el conector ECT (vibración del motor)",
+      "Sensor de temperatura fallando internamente",
+      "Burbujas de aire en el sistema de enfriamiento (pasan por el sensor)"
+    ],
+    "soluciones": [
+      "Purgar el sistema de refrigeración para sacar aire",
+      "Revisar pines del conector (ajustar tensión)",
+      "Reemplazar sensor ECT"
+    ]
+  },
+  {
+    "codigo": "P1120",
+    "descripcion": "Throttle Position Sensor A Out of Range",
+    "system": "Fuel System (Throttle)",
+    "sintomas": [
+      "El auto no acelera o acelera muy poco (Limp Mode)",
+      "Zona muerta en el pedal del acelerador",
+      "El motor se queda acelerado",
+      "Luz de control de tracción y rayo encendidas"
+    ],
+    "causas_probables": [
+      "Sensor TPS descalibrado o mal instalado",
+      "Pista del potenciómetro gastada (fallas en ciertos puntos)",
+      "Mariposa del acelerador atascada con carbón"
+    ],
+    "soluciones": [
+      "Limpiar cuerpo de aceleración con cuidado",
+      "Verificar voltaje de salida (debe ser lineal de 0.5V a 4.5V)",
+      "Reemplazar TPS o cuerpo de aceleración completo"
+    ]
+  },
+  {
+    "codigo": "P1121",
+    "descripcion": "Throttle Position Sensor Inconsistent with MAF",
+    "system": "Fuel / Air Intake",
+    "sintomas": [
+      "Conflicto de datos en la computadora",
+      "La transmisión hace cambios extraños",
+      "El motor duda al acelerar",
+      "Código común en Ford/Mazda"
+    ],
+    "causas_probables": [
+      "Lectura del TPS no coincide con el flujo de aire calculado",
+      "Fuga de vacío grande (entra aire que el MAF no ve)",
+      "Sensor TPS dañado o con 'ruido' eléctrico"
+    ],
+    "soluciones": [
+      "Buscar fugas en múltiple de admisión",
+      "Reemplazar sensor TPS",
+      "Reprogramar cuerpo de aceleración (Idle Relearn)"
+    ]
+  },
+  {
+    "codigo": "P1125",
+    "descripcion": "Throttle Position Sensor Intermittent",
+    "system": "Fuel System (Throttle)",
+    "sintomas": [
+      "El acelerador deja de responder momentáneamente",
+      "Jaloneo fuerte al pisar el pedal",
+      "El motor se apaga al soltar el acelerador"
+    ],
+    "causas_probables": [
+      "Cableado del TPS rozando con metal o cortado",
+      "Falla interna del motor del acelerador (electrónico)",
+      "Conector sucio o con agua"
+    ],
+    "soluciones": [
+      "Mover cables mientras se observa el escáner (gráfica de voltaje)",
+      "Limpiar contactos eléctricos",
+      "Cambiar cuerpo de aceleración si falla el motor interno"
+    ]
+  },
+  {
+    "codigo": "P1131",
+    "descripcion": "Lack of HO2S Switch - Sensor Indicates Lean (Bank 1)",
+    "system": "Fuel System (Ford)",
+    "sintomas": [
+      "El motor cascabelea al acelerar (mezcla pobre)",
+      "Pérdida de potencia en subidas",
+      "Consumo de combustible paradójicamente alto (la ECU intenta compensar)",
+      "Luz Check Engine encendida"
+    ],
+    "causas_probables": [
+      "Fuga de vacío (entra aire no medido)",
+      "Inyectores sucios (poca gasolina)",
+      "Sensor de oxígeno B1S1 atascado en bajo voltaje"
+    ],
+    "soluciones": [
+      "Prueba de humo para fugas de vacío",
+      "Medir presión de combustible",
+      "Reemplazar sensor de oxígeno Banco 1"
+    ]
+  },
+  {
+    "codigo": "P1132",
+    "descripcion": "Lack of HO2S Switch - Sensor Indicates Rich (Bank 1)",
+    "system": "Fuel System (Ford)",
+    "sintomas": [
+      "Humo negro visible",
+      "Olor a gasolina cruda",
+      "El motor se ahoga al acelerar a fondo",
+      "Bujías negras en el Banco 1"
+    ],
+    "causas_probables": [
+      "Inyector goteando (exceso de gasolina)",
+      "Filtro de aire obstruido",
+      "Sensor MAF sucio reportando más aire del real"
+    ],
+    "soluciones": [
+      "Limpiar sensor MAF",
+      "Revisar presión de combustible (regulador dañado)",
+      "Cambiar sensor de oxígeno Banco 1"
+    ]
+  },
+  {
+    "codigo": "P1135",
+    "descripcion": "Pedal Position Sensor A Circuit Intermittent (Ford) / A/F Sensor Heater (Toyota)",
+    "system": "Fuel / Intake",
+    "sintomas": [
+      "Ford: El auto deja de acelerar de repente (zona muerta en pedal)",
+      "Toyota: Luz MIL encendida sin síntomas graves de manejo",
+      "Modo de seguridad activado"
+    ],
+    "causas_probables": [
+      "Ford: Falla en el pedal del acelerador (pista sucia)",
+      "Toyota: Resistencia del calentador del sensor A/F abierta"
+    ],
+    "soluciones": [
+      "Ford: Reemplazar pedal electrónico completo",
+      "Toyota: Cambiar sensor de relación Aire/Combustible (A/F)"
+    ]
+  },
+  {
+    "codigo": "P1151",
+    "descripcion": "Lack of HO2S Switch - Sensor Indicates Lean (Bank 2)",
+    "system": "Fuel System (Ford)",
+    "sintomas": [
+      "Igual que P1131 pero afectando el Banco 2",
+      "Ralentí inestable",
+      "Falta de potencia"
+    ],
+    "causas_probables": [
+      "Fuga de vacío lado Banco 2 (múltiple de admisión)",
+      "Inyectores Banco 2 obstruidos",
+      "Sensor O2 B2S1 dañado"
+    ],
+    "soluciones": [
+      "Revisar empaques de admisión Banco 2",
+      "Limpiar inyectores",
+      "Reemplazar sensor O2 B2S1"
+    ]
+  },
+  {
+    "codigo": "P1152",
+    "descripcion": "Lack of HO2S Switch - Sensor Indicates Rich (Bank 2)",
+    "system": "Fuel System (Ford)",
+    "sintomas": [
+      "Humo negro lado izquierdo (en escapes dobles)",
+      "Consumo excesivo",
+      "Falla de encendido en banco 2"
+    ],
+    "causas_probables": [
+      "Inyector Banco 2 directo/goteando",
+      "Válvula EVAP purga excesiva (afecta ambos bancos pero puede marcar uno)",
+      "Sensor O2 B2S1 pegado en rico"
+    ],
+    "soluciones": [
+      "Balance de inyectores",
+      "Verificar válvula de purga canister",
+      "Cambiar sensor O2 B2S1"
+    ]
+  },
+  {
+    "codigo": "P1170",
+    "descripcion": "ESO - Engine Shut Off Solenoid Fault",
+    "system": "Fuel System (Diesel)",
+    "sintomas": [
+      "El motor Diesel no se apaga con la llave",
+      "El motor no arranca (no hay paso de diesel)",
+      "Falla intermitente de apagado"
+    ],
+    "causas_probables": [
+      "Solenoide de paro de motor dañado",
+      "Falla eléctrica en bomba de inyección",
+      "Aire en sistema de combustible"
+    ],
+    "soluciones": [
+      "Verificar voltaje al solenoide",
+      "Reemplazar solenoide de paro",
+      "Purgar sistema diesel"
+    ]
+  },
+  {
+    "codigo": "P1184",
+    "descripcion": "Engine Oil Temperature Sensor Out of Range",
+    "system": "Engine Mechanical",
+    "sintomas": [
+      "El ventilador del motor funciona al máximo todo el tiempo",
+      "Lectura de temperatura de aceite errónea (-40C o 150C)",
+      "Reducción de potencia por protección"
+    ],
+    "causas_probables": [
+      "Sensor de temperatura de aceite dañado",
+      "Aceite degradado o bajo nivel",
+      "Problema en arnés (cortocircuito)"
+    ],
+    "soluciones": [
+      "Cambiar aceite y filtro",
+      "Medir resistencia del sensor EOT",
+      "Reemplazar sensor"
+    ]
+  },
+  {
+    "codigo": "P1201",
+    "descripcion": "Cylinder 1 Injector Circuit Open/Short (o Misfire)",
+    "system": "Fuel System",
+    "sintomas": [
+      "Falla de cilindro 1 clara y constante",
+      "Vibración fuerte",
+      "Check engine parpadeando"
+    ],
+    "causas_probables": [
+      "Bobina de inyector 1 quemada",
+      "Cableado de inyector cortado",
+      "Driver de inyección ECU dañado"
+    ],
+    "soluciones": [
+      "Prueba de luz Noid en conector",
+      "Medir ohms del inyector",
+      "Cambiar inyector 1"
+    ]
+  },
+  {
+    "codigo": "P1211",
+    "descripcion": "Injector Control Pressure (ICP) Sensor Pressure Above/Below Desired",
+    "system": "Fuel System (Diesel Powerstroke)",
+    "sintomas": [
+      "Arranque largo o difícil",
+      "Pérdida de potencia al acelerar a fondo",
+      "Ralentí inestable (Lope idle)",
+      "El motor se apaga al soltar el acelerador"
+    ],
+    "causas_probables": [
+      "Bomba de alta presión (HPOP) débil",
+      "Sensor ICP dañado (lleno de aceite)",
+      "Válvula IPR (reguladora) atascada o sucia"
+    ],
+    "soluciones": [
+      "Desconectar sensor ICP (si mejora, cambiar sensor)",
+      "Revisar nivel de aceite de motor (es vital para la presión)",
+      "Reemplazar válvula IPR"
+    ]
+  },
+  {
+    "codigo": "P1212",
+    "descripcion": "Injector Control Pressure (ICP) Not Detected During Crank",
+    "system": "Fuel System (Diesel Powerstroke)",
+    "sintomas": [
+      "El motor gira pero NO ARRANCA (Crank no start)",
+      "No hay humo por el escape al dar marcha",
+      "La aguja de presión de aceite del tablero no sube"
+    ],
+    "causas_probables": [
+      "Sin presión de aceite base (LPOP)",
+      "Sensor ICP desconectado",
+      "Bomba HPOP dañada o fuga masiva de aceite en inyectores"
+    ],
+    "soluciones": [
+      "Verificar nivel de aceite en el cárter",
+      "Revisar fusible de control de motor",
+      "Probar sistema de alta presión de aceite (Leak test)"
+    ]
+  },
+  {
+    "codigo": "P1229",
+    "descripcion": "Intercooler Pump Driver Fault / Cylinder Head Temp",
+    "system": "Cooling / Supercharger",
+    "sintomas": [
+      "El supercargador se calienta mucho (Ford Lightning/Cobalt SS)",
+      "Pérdida de potencia por aire de admisión caliente",
+      "Temperatura de cabeza de cilindro alta"
+    ],
+    "causas_probables": [
+      "Bomba de agua del intercooler quemada",
+      "Relé de la bomba dañado",
+      "Aire en el sistema del intercooler"
+    ],
+    "soluciones": [
+      "Verificar si la bomba zumba/funciona",
+      "Purgar sistema de enfriamiento del supercargador",
+      "Reemplazar bomba auxiliar"
+    ]
+  },
+  {
+    "codigo": "P1230",
+    "descripcion": "Fuel Pump Low Speed Malfunction",
+    "system": "Fuel System (Ford)",
+    "sintomas": [
+      "El auto arranca y se apaga",
+      "Falla al conducir a baja velocidad",
+      "Presión de combustible baja"
+    ],
+    "causas_probables": [
+      "Módulo de control de bomba (FPDM) dañado",
+      "Bomba de combustible fallando",
+      "Resistencia en cableado a la bomba"
+    ],
+    "soluciones": [
+      "Revisar módulo FPDM (común en Ford)",
+      "Medir presión de gasolina",
+      "Cambiar bomba de gasolina"
+    ]
+  },
+  {
+    "codigo": "P1231",
+    "descripcion": "Fuel Pump Secondary Circuit Low (High Speed)",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor se apaga bajo aceleración fuerte",
+      "No arranca si el switch de inercia saltó",
+      "Falla de alimentación eléctrica a la bomba"
+    ],
+    "causas_probables": [
+      "Relé de alta velocidad de bomba dañado",
+      "Cable de alimentación a bomba abierto",
+      "Interruptor de inercia activado (golpe o bache)"
+    ],
+    "soluciones": [
+      "Revisar interruptor de inercia (cajuela/pies)",
+      "Verificar voltajes en el relé de bomba",
+      "Rastrear línea de alimentación"
+    ]
+  },
+  {
+    "codigo": "P1233",
+    "descripcion": "Fuel Pump Driver Module Disabled or Offline (Ford)",
+    "system": "Fuel System (Ford)",
+    "sintomas": [
+      "El motor NO ARRANCA (Crank no start)",
+      "No se escucha la bomba de gasolina",
+      "El auto se murió de repente"
+    ],
+    "causas_probables": [
+      "Módulo FPDM corroído/roto (montado en el eje trasero expuesto)",
+      "Interruptor de inercia disparado (cajuela/pies)",
+      "Cableado del módulo cortado"
+    ],
+    "soluciones": [
+      "Revisar/Resetear interruptor de inercia",
+      "Inspeccionar visualmente el módulo FPDM (se rompen por corrosión)",
+      "Reemplazar módulo FPDM"
+    ]
+  },
+  {
+    "codigo": "P1235",
+    "descripcion": "Fuel Pump Control Out of Range",
+    "system": "Fuel System",
+    "sintomas": [
+      "El motor se jalonea o titubea al acelerar",
+      "La bomba de gasolina hace un zumbido intermitente",
+      "Pérdida de potencia en alta velocidad",
+      "El motor se apaga y vuelve a encender"
+    ],
+    "causas_probables": [
+      "Bomba de combustible fallando (consumo de corriente alto)",
+      "Módulo FPDM dañado o sobrecalentado",
+      "Cableado de control con alta resistencia o corrosión"
+    ],
+    "soluciones": [
+      "Medir consumo de amperaje de la bomba con pinza amperimétrica",
+      "Verificar módulo de control FPDM por daños físicos",
+      "Cambiar bomba de gasolina"
+    ]
+  },
+  {
+    "codigo": "P1237",
+    "descripcion": "Fuel Pump Secondary Circuit Malfunction",
+    "system": "Fuel System",
+    "sintomas": [
+      "El auto no arranca (la bomba no activa)",
+      "Olor a plástico quemado cerca del tanque",
+      "El motor se murió de repente",
+      "Fusible de la bomba fundido"
+    ],
+    "causas_probables": [
+      "Falla en el circuito de salida del FPDM a la bomba",
+      "Conector de la bomba quemado o derretido (muy común)",
+      "Bomba de combustible atascada mecánicamente"
+    ],
+    "soluciones": [
+      "Revisar conector sobre el tanque de gasolina buscando pines quemados",
+      "Verificar continuidad del cableado",
+      "Reemplazar bomba y conector (pigtail)"
+    ]
+  },
+  {
+    "codigo": "P1260",
+    "descripcion": "THEFT Detected - Vehicle Immobilized",
+    "system": "Security / Anti-Theft",
+    "sintomas": [
+      "El motor da marcha pero no arranca (crank no start)",
+      "Luz de seguridad (candado/auto) parpadea rápido en el tablero",
+      "El motor arranca y se apaga a los 2 segundos",
+      "No hay inyección ni chispa"
+    ],
+    "causas_probables": [
+      "Llave no programada, chip dañado o llave incorrecta",
+      "Transceptor (antena) del switch dañado",
+      "Intento de robo (sistema PATS activo)",
+      "Batería del auto muy baja desprogramó el módulo"
+    ],
+    "soluciones": [
+      "Probar con la segunda llave (repuesto)",
+      "Reprogramar llaves con escáner",
+      "Revisar antena del inmovilizador alrededor del switch"
+    ]
+  },
+  {
+    "codigo": "P1270",
+    "descripcion": "Engine RPM or Vehicle Speed Limiter Reached",
+    "system": "Engine Control",
+    "sintomas": [
+      "El motor cortó inyección bruscamente a alta velocidad",
+      "No hay falla mecánica aparente después del evento",
+      "Luz de Check Engine puede o no encender",
+      "El auto funciona normal ahora"
+    ],
+    "causas_probables": [
+      "El conductor excedió el límite de velocidad/RPM (corte de gobernador)",
+      "Conducción agresiva o burnouts",
+      "No es una falla mecánica real"
+    ],
+    "soluciones": [
+      "Borrar código y advertir al conductor sobre los límites",
+      "No requiere reparación de piezas (código informativo)"
+    ]
+  },
+  {
+    "codigo": "P1280",
+    "descripcion": "Injection Control Pressure (ICP) Sensor Circuit Low (Diesel)",
+    "system": "Fuel System (Diesel Powerstroke)",
+    "sintomas": [
+      "Arranque muy difícil o imposible",
+      "Ralentí inestable",
+      "El motor se apaga al desacelerar",
+      "El motor funciona mejor si se desconecta el sensor ICP"
+    ],
+    "causas_probables": [
+      "Sensor ICP dañado o lleno de aceite en el conector",
+      "Baja presión de aceite en HPOP",
+      "Cableado en corto a tierra"
+    ],
+    "soluciones": [
+      "Desconectar sensor ICP para ver si arranca (entra en modo default)",
+      "Reemplazar sensor ICP y su conector (pigtail)",
+      "Revisar nivel de aceite motor"
+    ]
+  },
+  {
+    "codigo": "P1288",
+    "descripcion": "Cylinder Head Temperature (CHT) Sensor Out of Self Test Range",
+    "system": "Cooling System (Ford)",
+    "sintomas": [
+      "El indicador de temperatura se va al máximo",
+      "El aire acondicionado se apaga",
+      "El motor entra en modo de protección (baja potencia)",
+      "Ventiladores al máximo"
+    ],
+    "causas_probables": [
+      "Sensor CHT dañado o fuera de rango",
+      "Termostato pegado",
+      "Sistema de enfriamiento bajo de nivel"
+    ],
+    "soluciones": [
+      "Verificar flujo de refrigerante",
+      "Medir resistencia del sensor CHT (ubicado en la culata, en seco)",
+      "Cambiar sensor de temperatura de culata"
+    ]
+  },
+  {
+    "codigo": "P1299",
+    "descripcion": "Cylinder Head Overtemperature Protection Active",
+    "system": "Cooling System (Ford)",
+    "sintomas": [
+      "El motor funciona alternando cilindros (bombea aire para enfriarse)",
+      "Pérdida masiva de potencia",
+      "Luz de advertencia de temperatura",
+      "El motor suena diferente (modo 'Fail-safe cooling')"
+    ],
+    "causas_probables": [
+      "Pérdida masiva de refrigerante (manguera rota)",
+      "Bomba de agua rota o banda de accesorios rota",
+      "Motor entró en modo 'Limp Home' por calor extremo"
+    ],
+    "soluciones": [
+      "Detener motor inmediatamente para evitar daño permanente",
+      "Reparar fuga o sistema de enfriamiento",
+      "Borrar código tras reparación para salir del modo protección"
+    ]
+  },
+  {
+    "codigo": "P1309",
+    "descripcion": "Misfire Monitor AICE Chip Fault / Camshaft Position Sensor",
+    "system": "Ignition / Computer",
+    "sintomas": [
+      "Fallas de encendido no detectadas correctamente",
+      "Luz MIL encendida",
+      "Ruido de 'rechinido' en el sincronizador del árbol de levas (Ford 3.0/4.0L)",
+      "El motor se siente fuera de tiempo"
+    ],
+    "causas_probables": [
+      "Sensor del árbol de levas (CMP) mal sincronizado",
+      "Sincronizador del árbol de levas dañado (engrane gastado)",
+      "Falla en el chip de monitoreo de la ECU"
+    ],
+    "soluciones": [
+      "Ajustar sincronización del sensor CMP con herramienta especial",
+      "Reemplazar sincronizador del árbol de levas completo",
+      "Reemplazar ECU si el hardware está bien"
+    ]
+  },
+  {
+    "codigo": "P1316",
+    "descripcion": "IDM Codes Detected / Injector Circuit / Misfire (Ford Diesel)",
+    "system": "Fuel System (Diesel Powerstroke)",
+    "sintomas": [
+      "El motor tiembla violentamente",
+      "Pérdida de potencia en un banco completo de cilindros",
+      "Humo al acelerar",
+      "El motor suena 'disparejo'"
+    ],
+    "causas_probables": [
+      "Arnés de inyectores quemado o desconectado (bajo la tapa de punterías)",
+      "Módulo IDM (Injector Driver Module) dañado por agua",
+      "Conector UVCH (Under Valve Cover Harness) suelto"
+    ],
+    "soluciones": [
+      "Escanear códigos específicos del IDM (Buzz test)",
+      "Reemplazar empaques y arneses de inyectores (UVCH)",
+      "Asegurar conector interno con clip de retención"
+    ]
+  },
+  {
+    "codigo": "P1336",
+    "descripcion": "Crankshaft Position (CKP) System Variation Not Learned (GM)",
+    "system": "Ignition System (GM)",
+    "sintomas": [
+      "Luz Check Engine encendida después de cambiar computadora o sensor",
+      "El motor corta inyección a ciertas RPM",
+      "Posibles falsas alarmas de misfire",
+      "El auto funciona bien pero con la luz encendida"
+    ],
+    "causas_probables": [
+      "Se reemplazó sensor de cigüeñal, motor o ECU y no se calibró",
+      "No se ha realizado el aprendizaje 'CASE Learn'",
+      "Cadena de tiempo floja afectando la lectura"
+    ],
+    "soluciones": [
+      "Realizar procedimiento 'CASE Relearn' con escáner bidireccional",
+      "Revisar alineación del sensor CKP"
+    ]
+  },
+  {
+    "codigo": "P1345",
+    "descripcion": "Camshaft to Crankshaft Correlation Fault (GM / Lexus)",
+    "system": "Ignition / Timing",
+    "sintomas": [
+      "El motor arranca pero corre muy mal",
+      "Explosiones por el escape (backfire)",
+      "Falta de potencia extrema",
+      "Ralentí inestable"
+    ],
+    "causas_probables": [
+      "GM: Distribuidor instalado fuera de tiempo (diente saltado)",
+      "Lexus/Toyota: Válvula VVT atascada o filtro sucio",
+      "Cadena de tiempo estirada o saltada"
+    ],
+    "soluciones": [
+      "GM: Ajustar rotación del distribuidor a 0° (Cam Offset) con escáner",
+      "Toyota: Limpiar filtro OCV y cambiar válvula VVT",
+      "Reemplazar kit de tiempo"
+    ]
+  },
+  {
+    "codigo": "P1349",
+    "descripcion": "VVT System Malfunction (Bank 1) (Toyota)",
+    "system": "Engine Mechanical (VVT)",
+    "sintomas": [
+      "Ralentí muy inestable cuando el motor calienta",
+      "El motor se apaga al frenar",
+      "Pérdida de potencia en baja",
+      "El motor funciona bien en frío, falla en caliente"
+    ],
+    "causas_probables": [
+      "Válvula OCV (Oil Control Valve) atascada o sucia",
+      "Filtro de aceite VVT sucio (pequeña malla)",
+      "Engrane VVT (phaser) dañado internamente"
+    ],
+    "soluciones": [
+      "Sacar y limpiar o cambiar válvula OCV",
+      "Limpiar microfiltro de la línea de aceite del VVT",
+      "Cambiar actuador VVT (engrane)"
+    ]
+  },
+  {
+    "codigo": "P1351",
+    "descripcion": "Ignition Coil Control Circuit High Voltage (Ford) / IDM Input Circuit",
+    "system": "Ignition System",
+    "sintomas": [
+      "El motor no arranca o arranca y se apaga",
+      "Falla de encendido intermitente",
+      "El tacómetro salta erráticamente"
+    ],
+    "causas_probables": [
+      "Módulo de encendido (ICM) defectuoso (común en Ford viejos)",
+      "Bobina enviando voltaje de retorno errático",
+      "Falla en el circuito de monitoreo del IDM (Diesel)"
+    ],
+    "soluciones": [
+      "Revisar módulo de encendido (calienta mucho)",
+      "Verificar tierras del sistema de encendido",
+      "Diagnóstico de módulo IDM"
+    ]
+  },
+  {
+    "codigo": "P1361",
+    "descripcion": "Ignition Control (IC) Circuit Low Voltage (Ford) / TDC Sensor Intermittent (Honda)",
+    "system": "Ignition System",
+    "sintomas": [
+      "Honda: El motor se apaga de repente",
+      "Honda: No arranca",
+      "Ford: Falla de encendido",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Honda: Sensor de Punto Muerto Superior (TDC) con ruido o falla",
+      "Ford: Corto en circuito de bobinas",
+      "Distribuidor dañado (Honda)"
+    ],
+    "soluciones": [
+      "Honda: Reemplazar sensor TDC o distribuidor completo",
+      "Ford: Revisar arnés de encendido",
+      "Verificar interferencia eléctrica"
+    ]
+  },
+  {
+    "codigo": "P1380",
+    "descripcion": "Variable Cam Timing Solenoid A Malfunction (Ford) / ABS Rough Road (GM)",
+    "system": "Engine Mechanical (VVT)",
+    "sintomas": [
+      "Ford: Ruido de 'Diesel' en motor a gasolina (Phaser noise)",
+      "Ralentí inestable",
+      "Falta de potencia en baja RPM",
+      "GM: Luz de ABS y Check Engine"
+    ],
+    "causas_probables": [
+      "Solenoide VCT atascado por lodo de aceite (falta de cambios de aceite)",
+      "Falla en variador de fase (Phaser) roto",
+      "Aceite muy sucio o nivel bajo"
+    ],
+    "soluciones": [
+      "Cambiar aceite y filtro (paso 1 obligatorio)",
+      "Reemplazar solenoide VCT",
+      "Kit de tiempo completo con Phasers"
+    ]
+  },
+  {
+    "codigo": "P1381",
+    "descripcion": "Cylinder Position (CYP) Sensor Intermittent (Honda) / Variable Cam Timing Overadvanced (Ford)",
+    "system": "Ignition / Timing",
+    "sintomas": [
+      "Honda: Jaloneos al conducir, motor se corta momentáneamente",
+      "Ford: Motor inestable, cascabeleo",
+      "Consumo alto"
+    ],
+    "causas_probables": [
+      "Honda: Sensor CYP dentro del distribuidor fallando (interferencia)",
+      "Ford: Banda de tiempo saltada un diente o estirada",
+      "Solenoide VCT pegado abierto"
+    ],
+    "soluciones": [
+      "Honda: Cambiar distribuidor (sensor integrado)",
+      "Ford: Reemplazar solenoide VCT y verificar tiempo",
+      "Revisar blindaje de cables del sensor"
+    ]
+  },
+  {
+    "codigo": "P1391",
+    "descripcion": "Intermittent Loss of CMP or CKP Signal (Chrysler/Dodge/Jeep)",
+    "system": "Ignition System",
+    "sintomas": [
+      "El motor se apaga en marcha",
+      "Jaloneos violentos",
+      "No arranca a veces",
+      "Luz MIL prende y apaga"
+    ],
+    "causas_probables": [
+      "Sensor de cigüeñal o levas fallando a veces",
+      "Correa de distribución floja o vieja (latigueo)",
+      "Cables del sensor rozando metal o con falso contacto"
+    ],
+    "soluciones": [
+      "Revisar sincronización de la correa",
+      "Reemplazar ambos sensores (CKP y CMP) preferiblemente originales",
+      "Verificar conector del sensor por corrosión"
+    ]
+  },
+  {
+    "codigo": "P1399",
+    "descripcion": "Random Cylinder Misfire Detected (Honda) / Glow Plug Circuit High (Ford Diesel)",
+    "system": "Ignition / Engine Mechanical",
+    "sintomas": [
+      "Honda: El motor tiembla en ralentí",
+      "Honda: Luz de Check Engine parpadea",
+      "Honda: Pérdida de potencia",
+      "Ford: Humo blanco al arrancar"
+    ],
+    "causas_probables": [
+      "Honda: Válvulas desajustadas (muy común, punterías apretadas)",
+      "Honda: Canales de EGR tapados en el múltiple",
+      "Ford: Bujías incandescentes quemadas"
+    ],
+    "soluciones": [
+      "Honda: Ajustar punterías (reglaje de válvulas)",
+      "Honda: Limpiar inyectores y puertos EGR",
+      "Ford: Cambiar Glow Plugs"
+    ]
+  },
+  {
+    "codigo": "P1400",
+    "descripcion": "DPFE Sensor Circuit Low Voltage (Ford)",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "Luz de Check Engine encendida",
+      "Posible cascabeleo leve",
+      "Sin síntomas graves de conducción",
+      "Falla en prueba de emisiones"
+    ],
+    "causas_probables": [
+      "Sensor DPFE dañado",
+      "Mangueras del sensor DPFE desconectadas o rotas",
+      "Voltaje de referencia (VREF) caído"
+    ],
+    "soluciones": [
+      "Revisar las dos mangueras de goma del sensor (suelen quemarse)",
+      "Medir voltaje en conector",
+      "Reemplazar sensor DPFE"
+    ]
+  },
+  {
+    "codigo": "P1401",
+    "descripcion": "DPFE Sensor Circuit High Voltage (Ford)",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "Luz de Check Engine encendida",
+      "Posible cascabeleo leve",
+      "Sin síntomas graves de conducción",
+      "Falla en prueba de emisiones (NOx altos)"
+    ],
+    "causas_probables": [
+      "Mangueras del sensor DPFE tapadas o invertidas",
+      "Sensor DPFE dañado internamente (voltaje fijo en 5V)",
+      "Conducto de EGR tapado con carbón"
+    ],
+    "soluciones": [
+      "Sopletear mangueras del sensor para destaparlas",
+      "Verificar que las mangueras no estén quemadas o rotas",
+      "Cambiar sensor DPFE"
+    ]
+  },
+  {
+    "codigo": "P1405",
+    "descripcion": "DPFE Sensor Upstream Hose Off or Plugged (Ford) / EGR Valve Pin 3 Error (GM)",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "Ford: Olor a escape bajo el cofre (por manguera suelta)",
+      "Ford: Ruido de soplido al acelerar",
+      "GM: Luz MIL encendida sin falla de motor",
+      "Falla en emisiones"
+    ],
+    "causas_probables": [
+      "Ford: Manguera de presión del escape suelta o quemada",
+      "GM: Válvula EGR eléctrica dañada (circuito de posición)",
+      "Carbón bloqueando el puerto del sensor"
+    ],
+    "soluciones": [
+      "Ford: Reconectar manguera de silicona al tubo de escape",
+      "GM: Reemplazar válvula EGR eléctrica",
+      "Limpiar conductos de EGR"
+    ]
+  },
+  {
+    "codigo": "P1409",
+    "descripcion": "EGR Vacuum Regulator (EVR) Control Circuit Malfunction (Ford)",
+    "system": "Emissions (EGR)",
+    "sintomas": [
+      "El sistema EGR no funciona",
+      "Luz de servicio encendida",
+      "Sin síntomas de manejo perceptibles",
+      "Aumento de temperatura de combustión"
+    ],
+    "causas_probables": [
+      "Solenoide EVR quemado (bobina abierta)",
+      "Cableado del solenoide cortado o conector roto",
+      "PCM dañado (driver de salida)"
+    ],
+    "soluciones": [
+      "Medir resistencia del solenoide EVR (aprox 30-70 ohms)",
+      "Verificar alimentación de 12V al solenoide",
+      "Reemplazar solenoide de vacío EGR (EVR)"
+    ]
+  },
+  {
+    "codigo": "P1443",
+    "descripcion": "Evaporative Emission (EVAP) Control System Purge Valve Fault (Ford)",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Olor a gasolina leve",
+      "Luz MIL encendida",
+      "Posible succión excesiva en el tanque",
+      "Ralentí ligeramente inestable"
+    ],
+    "causas_probables": [
+      "Válvula de purga mecánica atascada o sucia",
+      "Mangueras de vacío podridas o rotas",
+      "Sensor de flujo de purga (termistor) dañado"
+    ],
+    "soluciones": [
+      "Reemplazar conjunto de válvula de purga y sensor",
+      "Cambiar mangueras de hule dañadas",
+      "Prueba de vacío en la válvula"
+    ]
+  },
+  {
+    "codigo": "P1450",
+    "descripcion": "Unable to Bleed Up Fuel Tank Vacuum (Ford)",
+    "system": "Emissions (EVAP)",
+    "sintomas": [
+      "Tanque de gasolina deformado o colapsado (por succión)",
+      "Dificultad para abrir el tapón de gasolina (mucha succión)",
+      "El auto se apaga después de un rato de conducción",
+      "El motor se ahoga al cargar gasolina"
+    ],
+    "causas_probables": [
+      "Válvula de purga EVAP atascada ABIERTA (succiona el tanque con el vacío del motor)",
+      "Manguera de ventilación del tanque bloqueada (nidos de insectos)",
+      "Sensor de presión del tanque dañado"
+    ],
+    "soluciones": [
+      "Desconectar válvula de purga y ver si sigue succionando en ralentí",
+      "Reemplazar válvula de purga (Canister Purge Valve)",
+      "Limpiar filtro de ventilación del canister"
+    ]
+  },
+  {
+    "codigo": "P1456",
+    "descripcion": "EVAP System Leak Detected (Fuel Tank System) (Honda)",
+    "system": "Emissions (EVAP - Honda)",
+    "sintomas": [
+      "Olor a gasolina cerca del tapón",
+      "Luz de Check Engine",
+      "No afecta el manejo",
+      "Aparece después de cargar combustible"
+    ],
+    "causas_probables": [
+      "Tapón de gasolina flojo, dañado o empaque roto",
+      "Sello de la bomba de gasolina dañado o mal instalado",
+      "Cuello de llenado oxidado o picado"
+    ],
+    "soluciones": [
+      "Apretar o cambiar tapón de gasolina (OEM Honda recomendado)",
+      "Inspeccionar cuello del tanque por óxido",
+      "Prueba de humo enfocada en el tapón y cuello"
+    ]
+  },
+  {
+    "codigo": "P1457",
+    "descripcion": "EVAP System Leak Detected (Control Canister System) (Honda)",
+    "system": "Emissions (EVAP - Honda)",
+    "sintomas": [
+      "Luz MIL encendida",
+      "Olor a gasolina debajo del auto (zona del canister)",
+      "Sin fallas de motor",
+      "Falla la verificación vehicular"
+    ],
+    "causas_probables": [
+      "Válvula de ventilación del canister (CVS) pegada/oxidada (muy común en climas húmedos)",
+      "Válvula de dos vías (Two-way valve) fugando",
+      "Canister de carbón roto o agrietado"
+    ],
+    "soluciones": [
+      "Reemplazar válvula de cierre de ventilación (Canister Vent Shut Valve)",
+      "Reemplazar canister de carbón si está saturado de agua",
+      "El tapón de gasolina NO arregla este código en Honda"
+    ]
+  },
+  {
+    "codigo": "P1460",
+    "descripcion": "Wide Open Throttle (WOT) A/C Cutoff Relay Circuit (Ford)",
+    "system": "HVAC / Electrical",
+    "sintomas": [
+      "El aire acondicionado no enfría o se corta al acelerar",
+      "El compresor no embraga",
+      "Luz de servicio encendida (a veces)",
+      "Falla eléctrica en el circuito de control"
+    ],
+    "causas_probables": [
+      "Relevador de corte de A/C dañado",
+      "Bobina del relé abierta",
+      "Cableado del embrague del compresor cortado"
+    ],
+    "soluciones": [
+      "Intercambiar relevador de A/C en la caja de fusibles",
+      "Verificar señal de activación desde la ECU",
+      "Revisar fusible del compresor"
+    ]
+  },
+  {
+    "codigo": "P1464",
+    "descripcion": "A/C Demand Out of Self Test Range (Ford)",
+    "system": "HVAC / Diagnostics",
+    "sintomas": [
+      "Código aparece solo durante el autodiagnóstico (KOER)",
+      "No es una falla real de operación",
+      "Indica error de procedimiento del mecánico"
+    ],
+    "causas_probables": [
+      "El aire acondicionado estaba ENCENDIDO durante el autodiagnóstico",
+      "El defroster estaba activo (activa el A/C automáticamente)",
+      "Sensor de presión A/C en corto (menos probable)"
+    ],
+    "soluciones": [
+      "Apagar A/C y Defroster y repetir el escaneo",
+      "No es una falla real si olvidaste apagar el A/C",
+      "Verificar interruptor de presión si persiste con A/C apagado"
+    ]
+  },
+  {
+    "codigo": "P1469",
+    "descripcion": "Low A/C Cycling Period",
+    "system": "HVAC",
+    "sintomas": [
+      "El compresor de A/C prende y apaga muy rápido (ciclaje corto)",
+      "El aire no enfría lo suficiente",
+      "Desgaste prematuro del embrague del compresor"
+    ],
+    "causas_probables": [
+      "Baja carga de gas refrigerante (fuga)",
+      "Interruptor de ciclaje de baja presión dañado",
+      "Filtro de cabina tapado (evaporador congelado)"
+    ],
+    "soluciones": [
+      "Recargar gas refrigerante con báscula a la especificación exacta",
+      "Buscar fugas de freón con tinte UV",
+      "Cambiar interruptor de baja presión"
+    ]
+  },
+  {
+    "codigo": "P1474",
+    "descripcion": "Low Fan Control Primary Circuit Malfunction",
+    "system": "Cooling / Electrical",
+    "sintomas": [
+      "El ventilador no enciende en baja velocidad",
+      "El motor se calienta ligeramente en tráfico",
+      "El A/C no enfría bien en ralentí"
+    ],
+    "causas_probables": [
+      "Módulo de control de ventiladores (CCRM) dañado (común en Ford)",
+      "Relé de baja velocidad del ventilador quemado",
+      "Cableado abierto hacia el ventilador"
+    ],
+    "soluciones": [
+      "Revisar caja de relés CCRM (Módulo de Relés de Control Constante)",
+      "Verificar motor del ventilador directo a batería",
+      "Rastrear cableado de control desde la ECU"
+    ]
+  },
+  {
+    "codigo": "P1481",
+    "descripcion": "Fan Relay (High) Circuit Malfunction",
+    "system": "Cooling / Electrical",
+    "sintomas": [
+      "El ventilador no enciende en alta velocidad",
+      "Sobrecalentamiento rápido con A/C encendido o subidas",
+      "Luz de temperatura encendida",
+      "Fusible fundido"
+    ],
+    "causas_probables": [
+      "Relé de alta velocidad defectuoso",
+      "Conector del ventilador derretido por alto amperaje",
+      "Fusible de alta corriente fundido"
+    ],
+    "soluciones": [
+      "Inspeccionar conector del ventilador (suelen quemarse)",
+      "Intercambiar relé de alta",
+      "Reemplazar electroventilador si consume mucha corriente"
+    ]
+  },
+  {
+    "codigo": "P1504",
+    "descripcion": "Idle Air Control (IAC) Circuit Malfunction",
+    "system": "Air Intake / Idle",
+    "sintomas": [
+      "El auto se apaga en cada semáforo",
+      "No mantiene el ralentí",
+      "Hay que mantener el pie en el acelerador para que no se apague",
+      "Luz MIL encendida"
+    ],
+    "causas_probables": [
+      "Válvula IAC sucia (carbón) o atascada",
+      "Bobina de la válvula IAC abierta eléctricamente",
+      "Cableado desconectado o roto"
+    ],
+    "soluciones": [
+      "Limpiar válvula IAC con carboclean",
+      "Medir resistencia de la válvula (aprox 10 ohms)",
+      "Reemplazar válvula IAC"
+    ]
+  },
+  {
+    "codigo": "P1506",
+    "descripcion": "Idle Air Control Overspeed Error",
+    "system": "Air Intake / Idle",
+    "sintomas": [
+      "El motor está muy acelerado en ralentí",
+      "La IAC intenta cerrar pero el aire sigue entrando",
+      "Golpe al meter velocidad en automáticos"
+    ],
+    "causas_probables": [
+      "Válvula IAC pegada en abierto",
+      "Fuga de vacío grande (manguera rota, junta de admisión)",
+      "Válvula PCV desconectada"
+    ],
+    "soluciones": [
+      "Buscar fugas de vacío con humo o spray",
+      "Reemplazar válvula IAC si está limpia pero falla",
+      "Verificar resorte de retorno del acelerador"
+    ]
+  },
+  {
+    "codigo": "P1516",
+    "descripcion": "Throttle Actuator Control (TAC) Module Performance (GM)",
+    "system": "Fuel / Throttle (GM)",
+    "sintomas": [
+      "Modo de potencia reducida (Reduced Engine Power) en tablero",
+      "El auto apenas camina",
+      "No responde al acelerador",
+      "Luz de Check Engine"
+    ],
+    "causas_probables": [
+      "Cuerpo de aceleración electrónico sucio o dañado",
+      "Desacuerdo entre posición del pedal y posición de la mariposa",
+      "Conector del cuerpo de aceleración vibrando o sulfatado"
+    ],
+    "soluciones": [
+      "Limpiar mariposa electrónica (sin moverla manualmente si es posible)",
+      "Revisar pines del conector (crimpar bien los terminales)",
+      "Reemplazar cuerpo de aceleración"
+    ]
+  },
+  {
+    "codigo": "P1518",
+    "descripcion": "Intake Manifold Runner Control (IMRC) Stuck Open (Ford)",
+    "system": "Air Intake (Ford)",
+    "sintomas": [
+      "Pérdida de torque en baja velocidad",
+      "Consumo de combustible aumentado",
+      "Luz de Check Engine",
+      "El motor se siente 'flojo' al arrancar"
+    ],
+    "causas_probables": [
+      "Clips de plástico del varillaje IMRC rotos (detrás del múltiple)",
+      "Cables de control del IMRC atascados o chicotes rotos",
+      "Motor actuador IMRC quemado"
+    ],
+    "soluciones": [
+      "Inspeccionar varillaje detrás del múltiple de admisión (espejo o cámara)",
+      "Reemplazar bujes de plástico del IMRC (falla #1 en Ford F-150)",
+      "Cambiar actuador IMRC"
+    ]
+  },
+  {
+    "codigo": "P1519",
+    "descripcion": "Intake Manifold Runner Control (IMRC) Stuck Closed",
+    "system": "Air Intake (Ford)",
+    "sintomas": [
+      "Falta de potencia notable en altas revoluciones (arriba de 3000 RPM)",
+      "El motor se siente 'ahogado' al rebasar",
+      "Luz Check Engine encendida",
+      "Sin problemas en manejo de ciudad (bajas RPM)"
+    ],
+    "causas_probables": [
+      "Varillaje del IMRC atascado por suciedad o carbón",
+      "Falla eléctrica en el motor actuador del IMRC",
+      "Resorte de retorno roto o desconectado"
+    ],
+    "soluciones": [
+      "Limpiar mecanismos de mariposas secundarias con solvente",
+      "Verificar funcionamiento del actuador eléctrico",
+      "Reparar conexión mecánica (clips de plástico)"
+    ]
+  },
+  {
+    "codigo": "P1530",
+    "descripcion": "A/C Clutch Circuit Malfunction",
+    "system": "HVAC / Electrical",
+    "sintomas": [
+      "El aire acondicionado no funciona (compresor no embraga)",
+      "El fusible del A/C se funde repetidamente",
+      "Luz de servicio encendida (en algunos modelos)",
+      "Olor a quemado eléctrico"
+    ],
+    "causas_probables": [
+      "Bobina del clutch del compresor de A/C abierta (quemada)",
+      "Relé de A/C defectuoso o pegado",
+      "Fusible quemado por corto circuito"
+    ],
+    "soluciones": [
+      "Medir resistencia de la bobina del compresor (aprox 3-5 ohms)",
+      "Verificar relé en caja de fusibles (intercambiar con claxon)",
+      "Revisar si hay gas refrigerante (el switch de presión corta el circuito)"
+    ]
+  },
+  {
+    "codigo": "P1572",
+    "descripcion": "Brake Pedal Switch Circuit Malfunction",
+    "system": "Electrical / Safety",
+    "sintomas": [
+      "Control crucero no se activa o se desactiva solo",
+      "Luces de freno no funcionan correctamente",
+      "El convertidor de par no se desbloquea al frenar",
+      "No se puede sacar la palanca de cambios de Park"
+    ],
+    "causas_probables": [
+      "Interruptor de freno desajustado o dañado",
+      "Pedal de freno no regresa completamente (resorte débil)",
+      "Cableado dañado o conector suelto"
+    ],
+    "soluciones": [
+      "Ajustar posición del switch de freno en el pedal",
+      "Verificar operación de luces de stop",
+      "Reemplazar sensor de pedal de freno"
+    ]
+  },
+  {
+    "codigo": "P1605",
+    "descripcion": "Keep Alive Memory (KAM) Test Failure",
+    "system": "Computer / ECU",
+    "sintomas": [
+      "El auto funciona bien pero tiene la luz MIL encendida",
+      "Ralentí inestable después de un cambio de batería",
+      "La transmisión hace cambios bruscos (perdió adaptación)",
+      "Falla en prueba de emisiones (monitores no completados)"
+    ],
+    "causas_probables": [
+      "Batería desconectada recientemente (Código normal post-servicio)",
+      "Falla interna en memoria de PCM (no retiene datos)",
+      "Reprogramación fallida o interrumpida"
+    ],
+    "soluciones": [
+      "Manejar el vehículo varios ciclos de conducción para que reaprenda",
+      "Borrar códigos y verificar si regresa",
+      "Si persiste y falla el auto, reemplazar PCM"
+    ]
+  },
+  {
+    "codigo": "P1626",
+    "descripcion": "Theft Deterrent Fuel Enable Signal Not Received (GM Passlock)",
+    "system": "Security / Anti-Theft",
+    "sintomas": [
+      "El motor arranca y se apaga inmediatamente (start & stall)",
+      "Luz de 'Security' encendida o parpadeando",
+      "El auto no arranca por 10 minutos (bloqueo de seguridad)",
+      "Inyectores desactivados"
+    ],
+    "causas_probables": [
+      "Sensor Passlock (en el cilindro de la llave) sucio o dañado",
+      "Falla en comunicación BCM-PCM (cable de datos cortado)",
+      "Intento de arranque sin llave válida o llave gastada"
+    ],
+    "soluciones": [
+      "Realizar procedimiento de aprendizaje de 30 minutos (GM)",
+      "Limpiar o cambiar cilindro de ignición (Passlock sensor)",
+      "Revisar cableado del BCM"
+    ]
+  },
+  {
+    "codigo": "P1631",
+    "descripcion": "Theft Deterrent Password Incorrect (GM) / Main Relay Malfunction (Ford)",
+    "system": "Security / Electrical",
+    "sintomas": [
+      "GM: El motor no arranca, luz de seguridad parpadea",
+      "Ford: El motor no arranca, no hay comunicación con escáner",
+      "Ford: La bomba de gasolina no enciende"
+    ],
+    "causas_probables": [
+      "GM: Computadora reemplazada sin programar el inmovilizador",
+      "Ford: Relé principal de energía (PCM Relay) fallando o haciendo falso contacto"
+    ],
+    "soluciones": [
+      "GM: Programar inmovilizador con escáner",
+      "Ford: Cambiar relé de control del motor (PCM Power Relay)",
+      "Verificar voltajes de batería y tierras"
+    ]
+  },
+  {
+    "codigo": "P1633",
+    "descripcion": "Keep Alive Power (KAM) Voltage Too Low",
+    "system": "Computer / Electrical",
+    "sintomas": [
+      "El motor pierde la memoria de ralentí al apagarlo",
+      "Arranques en frío difíciles",
+      "Código P1000 permanente (monitores no completados)",
+      "Consumo de combustible alto"
+    ],
+    "causas_probables": [
+      "Fusible de memoria (KAM) fundido (generalmente fusible pequeño de 3A-5A)",
+      "Batería muy vieja o descargada",
+      "Cable de alimentación constante a la ECU cortado"
+    ],
+    "soluciones": [
+      "Revisar fusibles en caja de motor (buscar fusible KAM o ECU B+)",
+      "Verificar estado de batería",
+      "Rastrear línea de voltaje constante a la ECU (siempre debe tener 12V)"
+    ]
+  },
+  {
+    "codigo": "P1637",
+    "descripcion": "Can Link ECM/ABS Control Module Circuit/Network Malfunction",
+    "system": "Communication / Network",
+    "sintomas": [
+      "Luz de ABS y Check Engine encendidas",
+      "El velocímetro puede dejar de funcionar",
+      "Dirección asistida dura (si es eléctrica)",
+      "Falla de comunicación con módulo ABS"
+    ],
+    "causas_probables": [
+      "Módulo ABS desconectado o sin energía (fusible fundido)",
+      "Líneas CAN Bus cortadas o en corto (resistencia incorrecta)",
+      "Computadora ABS dañada"
+    ],
+    "soluciones": [
+      "Revisar conector del módulo ABS por humedad",
+      "Medir resistencia del CAN Bus (debe ser 60 ohms entre pines 6 y 14)",
+      "Verificar fusibles del sistema ABS"
+    ]
+  },
+  {
+    "codigo": "P1650",
+    "descripcion": "Power Steering Pressure (PSP) Switch Out of Range",
+    "system": "Steering / Idle Control",
+    "sintomas": [
+      "El motor se apaga al estacionarse (girar volante)",
+      "Ralentí cae bruscamente al mover la dirección",
+      "Código presente solo en autodiagnóstico KOER"
+    ],
+    "causas_probables": [
+      "Sensor de presión de dirección hidráulica dañado",
+      "Conector suelto o lleno de aceite",
+      "El mecánico movió el volante durante el autodiagnóstico (error de procedimiento)"
+    ],
+    "soluciones": [
+      "No mover el volante al escanear en modo KOER",
+      "Revisar sensor en la bomba de dirección por fugas",
+      "Reemplazar sensor PSP"
+    ]
+  },
+  {
+    "codigo": "P1682",
+    "descripcion": "Ignition 1 Switch Circuit 2 (GM)",
+    "system": "Electrical / Ignition",
+    "sintomas": [
+      "El motor arranca y se apaga",
+      "Falla de encendido en la mitad de los cilindros (banco apagado)",
+      "Modo de potencia reducida",
+      "Problemas eléctricos aleatorios en el tablero"
+    ],
+    "causas_probables": [
+      "Switch de encendido defectuoso (contactos internos carbonizados)",
+      "Fusible de ignición fundido (un lado de la caja de fusibles sin energía)",
+      "Diferencia de voltaje entre dos circuitos de ignición principales"
+    ],
+    "soluciones": [
+      "Reemplazar switch de encendido (pieza eléctrica detrás de la llave)",
+      "Verificar fusibles y relevadores de ignición (Run/Crank relay)",
+      "Revisar caja de fusibles por corrosión interna"
+    ]
+  },
+  {
+    "codigo": "P1700",
+    "descripcion": "Transmission Control Module (TCM) Requested MIL Illumination",
+    "system": "Transmission / Network",
+    "sintomas": [
+      "Luz Check Engine encendida",
+      "La transmisión falla o entra en modo de seguridad",
+      "Este código NO dice cuál es la falla, solo avisa",
+      "Falta de comunicación TCM"
+    ],
+    "causas_probables": [
+      "Hay códigos de falla almacenados en el módulo de transmisión (TCM)",
+      "La transmisión entró en modo de seguridad por otra falla",
+      "Falla de comunicación TCM-ECM"
+    ],
+    "soluciones": [
+      "Escanear específicamente el módulo de transmisión (TCM) para ver los códigos reales",
+      "Este código es solo un aviso, borrarlo no soluciona nada",
+      "Revisar nivel y estado del fluido de transmisión"
+    ]
+  },
+  {
+    "codigo": "P1705",
+    "descripcion": "Transmission Range Sensor Out of Self Test Range (Ford)",
+    "system": "Transmission",
+    "sintomas": [
+      "Código aparece después de un autodiagnóstico",
+      "El auto no arranca a veces",
+      "Luces de reversa no funcionan"
+    ],
+    "causas_probables": [
+      "El auto no estaba en Park o Neutral al momento de escanear",
+      "Sensor TR desajustado o flojo",
+      "Falla en switch de neutral (Neutral Safety Switch)"
+    ],
+    "soluciones": [
+      "Poner palanca en P, poner freno de mano y repetir escaneo",
+      "Ajustar chicote de cambios",
+      "Reemplazar sensor de rango si falla consistentemente"
+    ]
+  },
+  {
+    "codigo": "P1706",
+    "descripcion": "High Vehicle Speed Observed in Park",
+    "system": "Transmission",
+    "sintomas": [
+      "Ralentí alto en Park",
+      "El auto tiembla en Park",
+      "Problemas con el control de crucero",
+      "El velocímetro se mueve estando detenido (interferencia)"
+    ],
+    "causas_probables": [
+      "Palanca en Park pero el auto se mueve (chicote roto)",
+      "Sensor de velocidad VSS fallando o con ruido eléctrico",
+      "Problema en la caja de transferencia (4x4) en Neutral"
+    ],
+    "soluciones": [
+      "Verificar sensor de velocidad y su cableado",
+      "Revisar ajuste de la palanca de cambios (asegurar que entre bien a P)",
+      "Problema interno de transmisión (trinquete de parking roto)"
+    ]
+  },
+  {
+    "codigo": "P1744",
+    "descripcion": "Torque Converter Clutch (TCC) System Stuck in Off Position (Ford)",
+    "system": "Transmission",
+    "sintomas": [
+      "El motor va muy revolucionado en autopista",
+      "Consumo de gasolina elevado",
+      "Transmisión se calienta",
+      "Luz O/D Off parpadeando"
+    ],
+    "causas_probables": [
+      "Convertidor de par dañado (balata interna gastada)",
+      "Solenoide TCC fallando o filtro sucio",
+      "Válvula TCC en cuerpo de válvulas atascada"
+    ],
+    "soluciones": [
+      "Reemplazar convertidor de par (bajar transmisión)",
+      "Cambiar solenoide TCC y filtro",
+      "Instalar kit de reparación en cuerpo de válvulas (Shift Kit)"
+    ]
+  },
+  {
+    "codigo": "P1746",
+    "descripcion": "Pressure Control Solenoid 'A' Open Circuit (EPC)",
+    "system": "Transmission",
+    "sintomas": [
+      "La transmisión golpea fuerte en todos los cambios (Presión máxima por seguridad)",
+      "Luz de O/D Off parpadeando",
+      "Posiblemente no hace cambios automáticos",
+      "Arranque pesado"
+    ],
+    "causas_probables": [
+      "Solenoide EPC (Control de Presión) quemado (bobina abierta)",
+      "Cableado interno de transmisión roto o desconectado",
+      "Conector de la caja sulfatado"
+    ],
+    "soluciones": [
+      "Medir resistencia del solenoide EPC",
+      "Reemplazar arnés interno de la caja",
+      "Cambiar solenoide EPC"
+    ]
+  },
+  {
+    "codigo": "P1747",
+    "descripcion": "Pressure Control Solenoid 'A' Short Circuit",
+    "system": "Transmission",
+    "sintomas": [
+      "Igual que P1746 (golpeteo severo)",
+      "Fusible de la transmisión podría fundirse",
+      "Olor a quemado si el driver de la ECU se daña",
+      "Modo de emergencia activo"
+    ],
+    "causas_probables": [
+      "Solenoide EPC en corto interno",
+      "Cables pelados tocándose entre sí dentro del arnés",
+      "Driver de la computadora (PCM) dañado por el corto"
+    ],
+    "soluciones": [
+      "Verificar corto a tierra en arnés con multímetro",
+      "Reemplazar solenoide EPC",
+      "Reparar computadora (PCM) si no envía señal"
+    ]
+  },
+  {
+    "codigo": "P1751",
+    "descripcion": "Shift Solenoid 'A' Performance",
+    "system": "Transmission",
+    "sintomas": [
+      "La transmisión patina al intentar cambiar",
+      "El cambio tarda mucho en entrar (flare)",
+      "El motor se revoluciona libremente entre cambios",
+      "Aceite con olor a quemado"
+    ],
+    "causas_probables": [
+      "Solenoide de cambio A mecánicamente atascado",
+      "Resorte de válvula roto en el cuerpo de válvulas",
+      "Suciedad o rebaba bloqueando el solenoide"
+    ],
+    "soluciones": [
+      "Limpieza profunda de cuerpo de válvulas",
+      "Reemplazar solenoide A",
+      "Cambio de fluido y filtro"
+    ]
+  },
+  {
+    "codigo": "P1760",
+    "descripcion": "Pressure Control Solenoid (EPC) Failed Low",
+    "system": "Transmission",
+    "sintomas": [
+      "Cambios muy suaves o imperceptibles (demasiado deslizamiento)",
+      "La transmisión patina en subidas",
+      "Falta de presión hidráulica general",
+      "Desgaste acelerado de discos"
+    ],
+    "causas_probables": [
+      "Solenoide EPC atascado en posición de baja presión",
+      "Bomba de aceite de transmisión desgastada o filtro tapado",
+      "Fuga interna de presión en sellos"
+    ],
+    "soluciones": [
+      "Medir presión de línea con manómetro en puerto de prueba",
+      "Reemplazar solenoide EPC",
+      "Reparación mayor de transmisión si la bomba falla"
+    ]
+  },
+  {
+    "codigo": "P1780",
+    "descripcion": "Transmission Control Switch (O/D Cancel) Out of Self Test Range",
+    "system": "Transmission / Diagnostics",
+    "sintomas": [
+      "Aparece solo durante el autodiagnóstico KOER",
+      "El botón de Overdrive no funciona al presionarlo",
+      "Luz O/D Off no enciende en el tablero"
+    ],
+    "causas_probables": [
+      "El mecánico olvidó presionar el botón de Overdrive durante el escaneo",
+      "Botón de O/D en la palanca dañado",
+      "Cable cortado en la columna de dirección (muy común en Ford F-150/Ranger)"
+    ],
+    "soluciones": [
+      "Repetir escaneo presionando el botón cuando se indique",
+      "Reparar cableado de la palanca de cambios (soldar cables rotos)",
+      "Reemplazar palanca de cambios"
+    ]
+  },
+  {
+    "codigo": "P1783",
+    "descripcion": "Transmission Overtemperature Condition",
+    "system": "Transmission",
+    "sintomas": [
+      "Luz de O/D parpadeando",
+      "El fluido de transmisión huele a quemado y se ve marrón",
+      "La transmisión patina en caliente",
+      "Fuga de aceite por el respiradero (al hervir)"
+    ],
+    "causas_probables": [
+      "Radiador de aceite de transmisión obstruido o sucio",
+      "Nivel bajo de aceite",
+      "Transmisión patinando excesivamente (generando fricción)"
+    ],
+    "soluciones": [
+      "Limpiar o instalar radiador externo auxiliar",
+      "Cambiar aceite quemado (flush)",
+      "Verificar flujo de la línea de enfriamiento"
+    ]
+  },
+  {
+    "codigo": "P1788",
+    "descripcion": "Pressure Control Solenoid 'B' Open Circuit",
+    "system": "Transmission",
+    "sintomas": [
+      "Cambios bruscos",
+      "Falla en cambios específicos controlados por el EPC B",
+      "Modo de seguridad",
+      "Luz MIL"
+    ],
+    "causas_probables": [
+      "Solenoide de presión B dañado (bobina abierta)",
+      "Falla de conexión en el arnés interno",
+      "Módulo TCM defectuoso"
+    ],
+    "soluciones": [
+      "Verificar continuidad del solenoide con multímetro",
+      "Revisar pines del conector de la transmisión",
+      "Reemplazar solenoide"
+    ]
+  },
+  {
+    "codigo": "P1810",
+    "descripcion": "TFP Valve Position Switch Circuit Malfunction (GM)",
+    "system": "Transmission (GM 4L60E)",
+    "sintomas": [
+      "Cambios erráticos o a destiempo",
+      "La transmisión 'busca' la marcha (sube y baja)",
+      "Golpeteo al cambiar (P1870 asociado)",
+      "Luz de servicio"
+    ],
+    "causas_probables": [
+      "Switch de presión de fluido (Pressure Switch Manifold) dañado o sucio",
+      "Cableado interno dañado",
+      "Válvula manual desalineada"
+    ],
+    "soluciones": [
+      "Reemplazar el conjunto de switches de presión (TFP Manifold)",
+      "Revisar conectores internos",
+      "Ajustar varillaje de cambios"
+    ]
+  },
+  {
+    "codigo": "P1811",
+    "descripcion": "Maximum Adapt and Long Shift (GM)",
+    "system": "Transmission (GM)",
+    "sintomas": [
+      "Cambios de velocidad tardan mucho en completarse",
+      "La transmisión golpea fuerte después de calentar",
+      "El motor se revoluciona al cambiar (deslizamiento)",
+      "Luz MIL encendida"
+    ],
+    "causas_probables": [
+      "Desgaste excesivo de embragues (discos gastados)",
+      "Solenoide de control de presión fallando",
+      "La computadora elevó la presión al máximo para compensar desgaste interno"
+    ],
+    "soluciones": [
+      "Reemplazar solenoide EPC (solución temporal)",
+      "Instalar Shift Kit (Kit de mejora)",
+      "Reconstrucción completa de transmisión necesaria (discos nuevos)"
+    ]
+  },
+  {
+    "codigo": "P1860",
+    "descripcion": "TCC PWM Solenoid Circuit Electrical (GM)",
+    "system": "Transmission (GM)",
+    "sintomas": [
+      "El convertidor de par no engancha",
+      "Aumento de consumo en autopista",
+      "Luz Check Engine",
+      "Sin síntomas graves de manejo en ciudad"
+    ],
+    "causas_probables": [
+      "Solenoide TCC PWM (Gris) dañado",
+      "Bobina abierta o en corto",
+      "Fusible de transmisión fundido"
+    ],
+    "soluciones": [
+      "Medir resistencia (debe ser 10-15 ohms)",
+      "Reemplazar solenoide TCC PWM",
+      "Verificar cableado a la ECU"
+    ]
+  },
+  {
+    "codigo": "P1870",
+    "descripcion": "Transmission Component Slipping (GM)",
+    "system": "Transmission (GM 4L60E)",
+    "sintomas": [
+      "Cambio de 1ra a 2da extremadamente golpeado después de manejar un rato",
+      "La transmisión se siente bien en frío, mal en caliente",
+      "Luz Check Engine encendida",
+      "Pérdida de Lock-up"
+    ],
+    "causas_probables": [
+      "Desgaste en el alojamiento de la válvula TCC (Cuerpo de válvulas de aluminio gastado)",
+      "Convertidor de par patinando",
+      "Pérdida de presión hidráulica por fugas internas"
+    ],
+    "soluciones": [
+      "Rectificar cuerpo de válvulas e instalar válvula sobremedida (Fix común)",
+      "Reemplazar cuerpo de válvulas completo",
+      "Cambiar convertidor de par"
+    ]
+  },
+  {
+    "codigo": "P1875",
+    "descripcion": "Transmission Automatic 4-Wheel Drive Switch Circuit Failure",
+    "system": "Transmission / 4x4",
+    "sintomas": [
+      "La 4x4 no se activa o desactiva",
+      "Luz de 4x4 parpadeando en el tablero",
+      "La transmisión no cambia de patrón de cambios",
+      "Luz de servicio"
+    ],
+    "causas_probables": [
+      "Switch selector de 4x4 dañado en el tablero",
+      "Cableado del switch a tierra o abierto",
+      "Falla en módulo GEM (Ford) o TCCM (GM)"
+    ],
+    "soluciones": [
+      "Probar switch con multímetro",
+      "Verificar módulo de control de tracción",
+      "Revisar motor de transferencia (Shift Motor)"
+    ]
+  },
+  {
+    "codigo": "P1876",
+    "descripcion": "Transfer Case 2-Wheel Drive Solenoid Circuit Failure",
+    "system": "Transmission / 4x4",
+    "sintomas": [
+      "Ruido de engranajes al intentar usar 4x4",
+      "Los cubos delanteros no se bloquean",
+      "El sistema se queda atascado en 4WD o 2WD"
+    ],
+    "causas_probables": [
+      "Solenoide de vacío de 4x4 (IWE) dañado o atascado",
+      "Líneas de vacío rotas hacia los cubos",
+      "Motor de transferencia atascado"
+    ],
+    "soluciones": [
+      "Verificar solenoides de vacío en la pared de fuego",
+      "Reemplazar solenoide de transferencia",
+      "Revisar cubos (hubs) de rueda por fugas de vacío"
+    ]
+  },
+  {
+    "codigo": "P1900",
+    "descripcion": "Output Shaft Speed (OSS) Circuit Intermittent / CAN Bus Error (Ford)",
+    "system": "Communication / Instrumentation",
+    "sintomas": [
+      "El tablero se apaga o las agujas caen a cero mientras conduces",
+      "Mensaje de 'Engine System Fault'",
+      "El auto entra en modo de seguridad (velocidad reducida)",
+      "Falla intermitente"
+    ],
+    "causas_probables": [
+      "Ford: Falla de comunicación en el panel de instrumentos (soldaduras frías en el conector)",
+      "Sensor de velocidad de salida sucio",
+      "Interferencia eléctrica del alternador"
+    ],
+    "soluciones": [
+      "Resoldar pines del conector trasero del tablero de instrumentos (Ford Focus/Fiesta)",
+      "Cambiar sensor OSS",
+      "Verificar diodos del alternador (ruido de CA)"
+    ]
+  },
+  {
+    "codigo": "P1901",
+    "descripcion": "Turbine Shaft Speed (TSS) Sensor Circuit Intermittent",
+    "system": "Transmission",
+    "sintomas": [
+      "Cambios bruscos o a destiempo",
+      "El convertidor no engancha",
+      "Luz de transmisión encendida",
+      "Lectura errática de RPM de entrada en escáner"
+    ],
+    "causas_probables": [
+      "Sensor de velocidad de turbina fallando",
+      "Conexión floja o sulfatada",
+      "Viruta metálica en la punta del sensor"
+    ],
+    "soluciones": [
+      "Limpiar sensor de metales",
+      "Ajustar pines del conector",
+      "Reemplazar sensor TSS"
+    ]
+  },
+  {
+    "codigo": "P1911",
+    "descripcion": "Generator Control Circuit Malfunction (Ford)",
+    "system": "Electrical / Charging",
+    "sintomas": [
+      "Luz de batería encendida",
+      "El alternador no carga",
+      "Cables derretidos en el alternador",
+      "Falla eléctrica general"
+    ],
+    "causas_probables": [
+      "Arnés del alternador dañado (conector de 3 pines roto internamente)",
+      "Regulador de voltaje interno dañado",
+      "Cable de señal a la ECU abierto"
+    ],
+    "soluciones": [
+      "Reemplazar conector del alternador (coleta/pigtail)",
+      "Verificar carga del alternador",
+      "Reemplazar alternador"
+    ]
+  }
+]
