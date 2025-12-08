@@ -5,14 +5,27 @@ import sys
 import unicodedata
 import re
 from typing import List, Dict, Any, Optional
+from PIL import Image
 
 # =========================================================
-# LÓGICA DEL SISTEMA EXPERTO (BACKEND)
+# 1. FUNCIÓN MÁGICA PARA RECURSOS (Imágenes/Iconos)
+# =========================================================
+def resource_path(relative_path):
+    """ Obtiene la ruta absoluta al recurso, funciona para dev y para PyInstaller """
+    try:
+        # PyInstaller crea una carpeta temporal en _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+# =========================================================
+# 2. LÓGICA DEL SISTEMA EXPERTO (BACKEND)
 # =========================================================
 
 DB_FILENAME = "OBD2 DATASET.JSON"
 
-# DICCIONARIO DE SINÓNIMOS TÉCNICOS
 TECHNICAL_SYNONYMS = {
     "humo negro": ["rica", "rich", "inyector", "presion combustible", "filtro aire"],
     "humo azul": ["aceite", "anillos", "valvula", "piston"],
@@ -36,10 +49,6 @@ SEVERITY_KEYWORDS = {
     "LOW": [] 
 }
 
-# ==========================================
-# 1. CAPA DE UTILIDADES
-# ==========================================
-
 class TextProcessor:
     @staticmethod
     def normalize(text: str) -> str:
@@ -49,10 +58,6 @@ class TextProcessor:
         text = re.sub(r'[^a-z0-9\s]', '', text)
         return re.sub(r'\s+', ' ', text).strip()
 
-# ==========================================
-# 2. CAPA DE ACCESO A DATOS
-# ==========================================
-
 class KnowledgeBase:
     def __init__(self, filename: str):
         self.filename = filename
@@ -61,8 +66,11 @@ class KnowledgeBase:
         self._load_data()
 
     def _load_data(self):
+        # Intentamos cargar el JSON. Si estamos en exe, el json debe estar AL LADO del exe.
+        # No usamos resource_path aquí porque el JSON es externo/editable.
         if not os.path.exists(self.filename):
-            print(f"ERROR: No se encontró '{self.filename}'.")
+            # No podemos imprimir error en consola si es noconsole, pero fallará silenciosamente
+            # O idealmente mostrar un popup de error.
             return
         try:
             with open(self.filename, 'r', encoding='utf-8') as f:
@@ -71,7 +79,7 @@ class KnowledgeBase:
                 code = entry.get('codigo', entry.get('code', '')).strip().upper()
                 if code: self.index_by_code[code] = entry
         except Exception as e:
-            print(f"ERROR JSON: {e}")
+            pass
 
     def get_entry_by_code(self, code: str) -> dict:
         return self.index_by_code.get(code.upper())
@@ -168,7 +176,7 @@ class InferenceEngine:
         return warns
 
 # =========================================================
-# INTERFAZ GRÁFICA MODERNA (FRONTEND - CUSTOMTKINTER)
+# 3. INTERFAZ GRÁFICA ESTILO "HERO" (FRONTEND)
 # =========================================================
 
 ctk.set_appearance_mode("Light")
@@ -178,247 +186,244 @@ class DashboardApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        # --- SETUP ---
+        # --- SETUP VENTANA ---
         self.title("Sistema Experto Automotriz")
-        self.geometry("1100x700")
+        self.geometry("1200x750")
         
         # Cargar Motor
         self.kb = KnowledgeBase(DB_FILENAME)
         self.engine = InferenceEngine(self.kb)
 
-        # Variables para el flujo iterativo de síntomas
+        # Variables Flujo
         self.symptoms_history = []
         self.step_counter = 1
-        self.symptoms_left = 3  # NUEVA VARIABLE PARA EL CONTADOR
+        self.symptoms_left = 3
 
-        # Grid Principal
-        self.grid_columnconfigure(1, weight=1)
+        # --- CARGA DE IMAGEN HERO (CORREGIDO) ---
+        # AQUI ESTABA EL ERROR: Ahora usamos resource_path
+        image_path = resource_path("motor_hero.png")
+        
+        self.hero_image = None
+        if os.path.exists(image_path):
+            self.hero_image = ctk.CTkImage(Image.open(image_path), size=(850, 750))
+        else:
+            print(f"Advertencia: No se encontró la imagen en {image_path}")
+
+        # --- GRID PRINCIPAL ---
+        self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
-        # --- SIDEBAR (IZQUIERDA) ---
-        self.sidebar_frame = ctk.CTkFrame(self, width=220, corner_radius=0, fg_color="#2A2D9E")
-        self.sidebar_frame.grid(row=0, column=0, sticky="nsew")
-        self.sidebar_frame.grid_rowconfigure(4, weight=1)
-
-        self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="🚗", font=ctk.CTkFont(size=60))
-        self.logo_label.grid(row=0, column=0, padx=20, pady=(40, 10))
-        self.app_name = ctk.CTkLabel(self.sidebar_frame, text="AUTO EXPERT", font=ctk.CTkFont(size=20, weight="bold"), text_color="white")
-        self.app_name.grid(row=1, column=0, padx=20, pady=10)
-
-        self.btn_code = self.create_sidebar_button("Buscar Código", 2, command=self.show_code_search)
-        self.btn_symptoms = self.create_sidebar_button("Diagnóstico Guiado", 3, command=self.show_symptoms_search)
+        # Marco Principal
+        self.main_frame = ctk.CTkFrame(self, fg_color="#EBF2F7", corner_radius=0)
+        self.main_frame.grid(row=0, column=0, sticky="nsew")
         
-        # --- MAIN AREA (DERECHA) ---
-        self.main_frame = ctk.CTkFrame(self, corner_radius=0, fg_color="#F0F0F0")
-        self.main_frame.grid(row=0, column=1, sticky="nsew")
-        self.main_frame.grid_rowconfigure(1, weight=1)
-        self.main_frame.grid_columnconfigure(0, weight=1)
+        # Grid del Main Frame
+        self.main_frame.grid_columnconfigure(0, weight=4) 
+        self.main_frame.grid_columnconfigure(1, weight=6) 
+        self.main_frame.grid_rowconfigure(0, weight=1)
 
-        self.header_frame = ctk.CTkFrame(self.main_frame, height=60, corner_radius=0, fg_color="transparent")
-        self.header_frame.grid(row=0, column=0, sticky="ew", padx=20, pady=20)
-        self.lbl_header = ctk.CTkLabel(self.header_frame, text="Bienvenido", font=("Arial", 24, "bold"), text_color="#333")
-        self.lbl_header.pack(side="left")
+        # Iniciar Vistas
+        self.show_home_hero()
 
-        self.content_frame = ctk.CTkFrame(self.main_frame, fg_color="transparent")
-        self.content_frame.grid(row=1, column=0, sticky="nsew", padx=20, pady=(0, 20))
-
-        self.show_code_search()
-
-    def create_sidebar_button(self, text, row, command):
-        btn = ctk.CTkButton(self.sidebar_frame, text=text, command=command,
-                            fg_color="transparent", text_color=("gray90", "gray90"), hover_color="#1F2283",
-                            height=50, anchor="w", font=("Arial", 14, "bold"))
-        btn.grid(row=row, column=0, sticky="ew", padx=10, pady=5)
-        return btn
-
-    def clear_content(self):
-        for widget in self.content_frame.winfo_children():
+    def clear_screen(self):
+        for widget in self.main_frame.winfo_children():
             widget.destroy()
 
     # ---------------------------------------------------------
-    # VISTA 1: BÚSQUEDA POR CÓDIGO
+    # VISTA 1: HOME PAGE
     # ---------------------------------------------------------
-    def show_code_search(self):
-        self.clear_content()
-        self.lbl_header.configure(text="Búsqueda Directa de DTC")
+    def show_home_hero(self):
+        self.clear_screen()
 
-        card = ctk.CTkFrame(self.content_frame, fg_color="white", corner_radius=15)
-        card.pack(fill="both", expand=True, padx=10, pady=10)
+        # --- COLUMNA IZQUIERDA ---
+        left_panel = ctk.CTkFrame(self.main_frame, fg_color="transparent")
+        left_panel.grid(row=0, column=0, sticky="nsew", padx=(60, 20), pady=40)
 
-        input_frame = ctk.CTkFrame(card, fg_color="transparent")
-        input_frame.pack(pady=30)
-        
-        self.entry_code = ctk.CTkEntry(input_frame, placeholder_text="Ej: P0300", width=300, height=40, font=("Arial", 16))
-        self.entry_code.pack(side="left", padx=10)
-        
-        btn_search = ctk.CTkButton(input_frame, text="BUSCAR", width=120, height=40, fg_color="#6C5CE7", command=self.perform_code_search)
-        btn_search.pack(side="left")
+        # Título
+        title_font = ctk.CTkFont(family="Arial", size=48, weight="bold")
+        ctk.CTkLabel(left_panel, text="Sistema Experto\nAutomotriz", 
+                     font=title_font, text_color="#0F172A", justify="left").pack(anchor="w", pady=(60, 20))
 
-        self.txt_code_result = ctk.CTkTextbox(card, width=600, height=400, font=("Consolas", 14), fg_color="#FAFAFA", text_color="#333")
-        self.txt_code_result.pack(pady=20, padx=20, fill="both", expand=True)
-        self.txt_code_result.configure(state="disabled")
+        # Subtítulo
+        sub_font = ctk.CTkFont(family="Arial", size=18)
+        ctk.CTkLabel(left_panel, text="Diagnóstico inteligente y rápido de\ncódigos DTC OBD-II e interpretación de síntomas.", 
+                     font=sub_font, text_color="#475569", justify="left").pack(anchor="w", pady=(0, 40))
 
-    def perform_code_search(self):
-        code = self.entry_code.get().strip()
+        # Barra de Búsqueda
+        search_container = ctk.CTkFrame(left_panel, fg_color="white", corner_radius=30, height=60)
+        search_container.pack(anchor="w", fill="x", pady=(0, 20))
+        search_container.pack_propagate(False)
+
+        self.entry_code_home = ctk.CTkEntry(search_container, placeholder_text="Ej: P0300", 
+                                            border_width=0, fg_color="transparent", 
+                                            font=("Arial", 16), text_color="#333")
+        self.entry_code_home.pack(side="left", padx=20, fill="x", expand=True)
+
+        ctk.CTkButton(search_container, text="BUSCAR", width=100, height=40, corner_radius=20,
+                      fg_color="#8EA7E9", hover_color="#7289DA", font=("Arial", 14, "bold"), 
+                      command=self.perform_quick_search).pack(side="right", padx=10)
+
+        # Navegación
+        nav_frame = ctk.CTkFrame(left_panel, fg_color="transparent")
+        nav_frame.pack(anchor="w", pady=10)
+
+        ctk.CTkButton(nav_frame, text="Buscar Código", fg_color="transparent", 
+                      text_color="#0F172A", font=("Arial", 14, "bold", "underline"), hover=False,
+                      anchor="w", command=lambda: None).pack(side="left", padx=(0, 20))
+
+        ctk.CTkButton(nav_frame, text="Diagnóstico Guiado", fg_color="transparent", 
+                      text_color="#64748B", font=("Arial", 14), hover_color="#E2E8F0",
+                      anchor="w", command=self.show_symptoms_view).pack(side="left")
+
+        # --- COLUMNA DERECHA ---
+        right_panel = ctk.CTkFrame(self.main_frame, fg_color="transparent")
+        right_panel.grid(row=0, column=1, sticky="nsew", padx=20, pady=40)
+
+        if self.hero_image:
+            ctk.CTkLabel(right_panel, text="", image=self.hero_image).place(relx=0.5, rely=0.5, anchor="center")
+        else:
+            ctk.CTkLabel(right_panel, text="[PONER IMAGEN 'motor_hero.png']", font=("Arial", 20), text_color="gray").place(relx=0.5, rely=0.5, anchor="center")
+
+    # ---------------------------------------------------------
+    # LÓGICA DE BÚSQUEDA RÁPIDA
+    # ---------------------------------------------------------
+    def perform_quick_search(self):
+        code = self.entry_code_home.get().strip()
         if not code: return
-        
+        self.show_results_modal(code)
+
+    def show_results_modal(self, code):
         res = self.engine.diagnose_by_code(code)
         
-        self.txt_code_result.configure(state="normal")
-        self.txt_code_result.delete("0.0", "end")
-        
+        modal = ctk.CTkToplevel(self)
+        modal.title(f"Reporte: {code}")
+        modal.geometry("600x600")
+        modal.attributes("-topmost", True)
+
+        scroll = ctk.CTkScrollableFrame(modal, fg_color="white")
+        scroll.pack(fill="both", expand=True, padx=20, pady=20)
+
         if not res["found"]:
-            self.txt_code_result.insert("0.0", f"❌ Código {code} no encontrado.")
+            ctk.CTkLabel(scroll, text="❌ Código no encontrado", font=("Arial", 20, "bold"), text_color="red").pack(pady=20)
         else:
-            report = f"✅ REPORTE: {res['code']}\n{'-'*60}\n"
-            report += f"DESCRIPCIÓN: {res['description']}\n"
-            report += f"SISTEMA:     {res['system']}\n"
-            report += f"SEVERIDAD:   {res['severity']}\n"
+            ctk.CTkLabel(scroll, text=f"Código: {res['code']}", font=("Arial", 24, "bold"), text_color="#2A2D9E").pack(anchor="w")
+            ctk.CTkLabel(scroll, text=res['description'], font=("Arial", 16), text_color="#333", justify="left").pack(anchor="w", pady=(0, 10))
             
-            if res['warnings']:
-                report += "\n⚠️ ADVERTENCIAS:\n" + "\n".join([f"  • {w}" for w in res['warnings']]) + "\n"
+            self.create_info_block(scroll, "SEVERIDAD", res['severity'], "red" if "ALTA" in str(res['severity']) else "orange")
+            self.create_info_block(scroll, "SISTEMA", res['system'], "blue")
             
-            report += "\n🔍 CAUSAS PROBABLES:\n" + "\n".join([f"  • {c}" for c in res['causes']]) + "\n"
-            report += "\n🛠️ SOLUCIONES:\n" + "\n".join([f"  • {s}" for s in res['solutions']])
-            
-            self.txt_code_result.insert("0.0", report)
-        
-        self.txt_code_result.configure(state="disabled")
+            if res['causes']:
+                ctk.CTkLabel(scroll, text="Causas Probables:", font=("Arial", 14, "bold"), text_color="#333").pack(anchor="w", pady=(10, 5))
+                for c in res['causes']:
+                    ctk.CTkLabel(scroll, text=f"• {c}", text_color="#555", anchor="w", justify="left").pack(anchor="w")
+
+            if res['solutions']:
+                ctk.CTkLabel(scroll, text="Soluciones:", font=("Arial", 14, "bold"), text_color="#333").pack(anchor="w", pady=(10, 5))
+                for s in res['solutions']:
+                    ctk.CTkLabel(scroll, text=f"✓ {s}", text_color="#555", anchor="w", justify="left").pack(anchor="w")
+
+    def create_info_block(self, parent, title, value, color):
+        f = ctk.CTkFrame(parent, fg_color="#F3F4F6", corner_radius=5)
+        f.pack(fill="x", pady=5)
+        ctk.CTkLabel(f, text=f"{title}: {value}", font=("Arial", 12, "bold"), text_color=color).pack(padx=10, pady=5, anchor="w")
 
     # ---------------------------------------------------------
-    # VISTA 2: DIAGNÓSTICO POR SÍNTOMAS (GUIADO)
+    # VISTA 2: SÍNTOMAS
     # ---------------------------------------------------------
-    def show_symptoms_search(self):
-        self.clear_content()
-        self.lbl_header.configure(text="Diagnóstico Guiado (Paso a Paso)")
+    def show_symptoms_view(self):
+        self.clear_screen()
         
-        # Resetear variables
         self.symptoms_history = []
         self.step_counter = 1
-        self.symptoms_left = 3 # REINICIAMOS EL CONTADOR
+        self.symptoms_left = 3
 
-        # Panel Izquierdo: Selección
-        left_panel = ctk.CTkFrame(self.content_frame, fg_color="white", corner_radius=15, width=400)
-        left_panel.pack(side="left", fill="y", padx=10, pady=10)
+        container = ctk.CTkFrame(self.main_frame, fg_color="white", corner_radius=20, width=900, height=650)
+        container.place(relx=0.5, rely=0.5, anchor="center")
+        container.pack_propagate(False)
 
-        self.lbl_step = ctk.CTkLabel(left_panel, text="PASO 1/3: Ingrese el síntoma principal", font=("Arial", 16, "bold"), text_color="#333")
-        self.lbl_step.pack(pady=20, padx=20)
+        ctk.CTkLabel(container, text="Diagnóstico Guiado", font=("Arial", 24, "bold"), text_color="#2A2D9E").pack(pady=(30, 5))
+        self.lbl_step = ctk.CTkLabel(container, text="PASO 1/3: Seleccione un síntoma", font=("Arial", 16), text_color="#555")
+        self.lbl_step.pack(pady=5)
+        
+        self.lbl_counter = ctk.CTkLabel(container, text="Restantes: 3", font=("Arial", 12), text_color="gray")
+        self.lbl_counter.pack(pady=(0, 20))
 
-        # Opciones comunes (Checkboxes)
-        self.scroll_cb = ctk.CTkScrollableFrame(left_panel, fg_color="transparent", height=200)
-        self.scroll_cb.pack(fill="x", padx=10)
+        options_frame = ctk.CTkFrame(container, fg_color="transparent")
+        options_frame.pack(padx=50, fill="both", expand=True)
 
         common_symptoms = [
-            "Humo Negro", "Humo Azul", "Humo Blanco", "No Arranca", "Se Apaga",
+            "Humo Negro", "Humo Azul", "No Arranca", "Se Apaga",
             "Jaloneos", "Vibración", "Falta Potencia", "Alto Consumo", 
-            "Calentamiento", "Olor Gasolina", "Ralentí Inestable"
+            "Calentamiento", "Olor Gasolina", "Ralentí Inestable", "Ruido Motor"
         ]
         
         self.symptom_var = ctk.StringVar(value="")
         
-        for sym in common_symptoms:
-            ctk.CTkRadioButton(self.scroll_cb, text=sym, variable=self.symptom_var, value=sym, text_color="#333").pack(anchor="w", pady=5)
+        for i, sym in enumerate(common_symptoms):
+            ctk.CTkRadioButton(options_frame, text=sym, variable=self.symptom_var, value=sym, 
+                               font=("Arial", 14), text_color="#333", border_color="#8EA7E9", hover_color="#8EA7E9").grid(row=i//3, column=i%3, padx=20, pady=15, sticky="w")
 
-        self.entry_extra = ctk.CTkEntry(left_panel, placeholder_text="O escriba otro síntoma...", width=250)
+        self.entry_extra = ctk.CTkEntry(container, placeholder_text="O escriba otro síntoma...", width=300)
         self.entry_extra.pack(pady=10)
 
-        self.btn_next = ctk.CTkButton(left_panel, text="AGREGAR SÍNTOMA", fg_color="#00B894", command=self.next_step)
-        self.btn_next.pack(pady=10)
+        actions_frame = ctk.CTkFrame(container, fg_color="transparent")
+        actions_frame.pack(pady=30, fill="x", padx=50)
+
+        ctk.CTkButton(actions_frame, text="← Volver", fg_color="transparent", text_color="gray", hover=False, command=self.show_home_hero).pack(side="left")
         
-        # --- AQUÍ ESTÁ EL NUEVO CONTADOR ---
-        self.lbl_counter = ctk.CTkLabel(left_panel, text=f"Espacios restantes: {self.symptoms_left}", font=("Arial", 14), text_color="gray")
-        self.lbl_counter.pack(pady=5)
-        # -----------------------------------
+        self.btn_finish = ctk.CTkButton(actions_frame, text="VER RESULTADOS", fg_color="#6C5CE7", width=150, command=self.finish_diagnosis)
+        self.btn_finish.pack(side="right", padx=10)
 
-        self.btn_finish = ctk.CTkButton(left_panel, text="VER RESULTADOS AHORA", fg_color="#6C5CE7", command=self.finish_diagnosis)
-        self.btn_finish.pack(pady=5)
+        self.btn_add = ctk.CTkButton(actions_frame, text="AGREGAR SÍNTOMA", fg_color="#8EA7E9", width=150, command=self.next_step_logic)
+        self.btn_add.pack(side="right")
 
-        self.lbl_history = ctk.CTkLabel(left_panel, text="Historial: Ninguno", text_color="gray")
-        self.lbl_history.pack(pady=20)
-
-        # Panel Derecho: Resultados
-        self.right_panel = ctk.CTkTextbox(self.content_frame, fg_color="white", text_color="#333", font=("Consolas", 12))
-        self.right_panel.pack(side="right", fill="both", expand=True, padx=10, pady=10)
-        self.right_panel.configure(state="disabled")
-
-    def next_step(self):
-        symptom = self.symptom_var.get()
+    def next_step_logic(self):
+        sym = self.symptom_var.get()
         extra = self.entry_extra.get().strip()
-        final_symptom = extra if extra else symptom
+        final = extra if extra else sym
 
-        if not final_symptom: return
+        if not final: return
 
-        self.symptoms_history.append(final_symptom)
-        
-        # Actualizar CONTADOR
+        self.symptoms_history.append(final)
         self.symptoms_left -= 1
-        self.lbl_counter.configure(text=f"Espacios restantes: {max(0, self.symptoms_left)}")
-
-        # Limpiar entradas
+        self.step_counter += 1
+        
+        self.lbl_counter.configure(text=f"Restantes: {max(0, self.symptoms_left)}")
         self.symptom_var.set("")
         self.entry_extra.delete(0, 'end')
 
-        # Actualizar UI
-        self.lbl_history.configure(text=f"Historial: {', '.join(self.symptoms_history)}")
-        
-        query = " ".join(self.symptoms_history)
-        results = self.engine.diagnose_by_symptoms(query)
-        count = len(results)
-
-        self.right_panel.configure(state="normal")
-        self.right_panel.delete("0.0", "end")
-        self.right_panel.insert("0.0", f"📊 ANÁLISIS PRELIMINAR:\nSe encontraron {count} posibles causas con los síntomas actuales.\n\n")
-        
-        if count > 0:
-            top = results[0]
-            self.right_panel.insert("end", f"Mejor candidato hasta ahora:\n[{top['code']}] {top['description']}\n")
-        else:
-            self.right_panel.insert("end", "⚠️ No hay coincidencias claras. Intente otro término.")
-
-        self.right_panel.configure(state="disabled")
-
-        self.step_counter += 1
         if self.step_counter > 3:
             self.finish_diagnosis()
         else:
-            self.lbl_step.configure(text=f"PASO {self.step_counter}/3: Agregue más detalles")
+            self.lbl_step.configure(text=f"PASO {self.step_counter}/3: Seleccione otro síntoma")
 
     def finish_diagnosis(self):
         if not self.symptoms_history: return
-
         query = " ".join(self.symptoms_history)
         results = self.engine.diagnose_by_symptoms(query)
+        
+        modal = ctk.CTkToplevel(self)
+        modal.title("Resultados")
+        modal.geometry("700x600")
+        modal.attributes("-topmost", True)
 
-        self.right_panel.configure(state="normal")
-        self.right_panel.delete("0.0", "end")
+        scroll = ctk.CTkScrollableFrame(modal, fg_color="white")
+        scroll.pack(fill="both", expand=True, padx=20, pady=20)
 
-        header = f"🏁 DIAGNÓSTICO FINAL ({len(results)} coincidencias)\n{'='*60}\n\n"
-        self.right_panel.insert("0.0", header)
+        ctk.CTkLabel(scroll, text=f"Basado en: {', '.join(self.symptoms_history)}", font=("Arial", 14, "italic"), text_color="#555").pack(pady=10)
 
         if not results:
-            self.right_panel.insert("end", "No se encontraron resultados.")
+            ctk.CTkLabel(scroll, text="No se encontraron coincidencias.", text_color="red").pack()
         else:
-            for idx, r in enumerate(results[:5], 1):
-                block = f"#{idx} | CÓDIGO: {r['code']} | SCORE: {r['score']}\n"
-                block += f"    DESC: {r['description']}\n"
-                block += f"    SISTEMA: {r['system']}\n"
+            for r in results[:5]:
+                f = ctk.CTkFrame(scroll, fg_color="#F8FAFC", corner_radius=10, border_width=1, border_color="#E2E8F0")
+                f.pack(fill="x", pady=5, padx=5)
+                
+                ctk.CTkLabel(f, text=f"{r['code']} ({int(r['score'])} pts)", font=("Arial", 16, "bold"), text_color="#2A2D9E").pack(anchor="w", padx=10, pady=(10,0))
+                ctk.CTkLabel(f, text=r['description'], text_color="#333", justify="left").pack(anchor="w", padx=10)
                 
                 if r['causes']:
-                    block += f"    [?] CAUSA: {r['causes'][0]}\n"
-                if r['solutions']:
-                    block += f"    [+] SOLUCIÓN: {r['solutions'][0]}\n"
-                
-                if r.get('matches'):
-                    unique_matches = list(set(r['matches']))
-                    block += f"    (Coincidencia: {', '.join(unique_matches)})\n"
-
-                block += "-"*60 + "\n"
-                self.right_panel.insert("end", block)
-
-        self.right_panel.configure(state="disabled")
-        self.lbl_step.configure(text="Diagnóstico Completado")
-        self.btn_next.configure(state="disabled")
-        self.lbl_counter.configure(text="Espacios restantes: 0") # Asegurar que marque 0 al final
+                    ctk.CTkLabel(f, text=f"Causa: {r['causes'][0]}", text_color="#666", font=("Arial", 12)).pack(anchor="w", padx=10, pady=(5,10))
 
 if __name__ == "__main__":
     app = DashboardApp()
